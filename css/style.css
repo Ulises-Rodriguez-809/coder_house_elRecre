@@ -106,13 +106,13 @@ html {
 
 .recContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    /* background-image: url("../WhatsApp\ Image\ 2023-05-14\ at\ 9.56.20\ PM.jpeg"); */
 }
 
 .rec {
     text-align: center;
-    width: 50rem;
-    height: 30rem;
     margin-top: 2rem;
 }
 
@@ -122,8 +122,8 @@ html {
 }
 
 .imgRec {
-    width: 35rem;
-    height: 17rem;
+    width: 40rem;
+    height: 20rem;
 }
 
 
@@ -163,7 +163,6 @@ html {
     left: 100%;
     margin-top: 2rem;
     display: inline-block;
-    /* margin-left: 93%; */
 }
 
 /* footer */
@@ -534,18 +533,36 @@ form textarea {
     background-color: aqua;
 }
 
-.divEntrInt, .divEntrExt{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.entreSubTitulo {
+    font-size: 3rem;
 }
 
-.divEntrInt img, .divEntrExt img{
-    width: 200px;
-    height: 200px;
+.carousel-item img {
+    width: 100%;
+    max-height: 35rem;
 }
 
+.fondo{
+    background-color: #e4e2e2;
+}
+
+.tennisBg{
+    background-image: url("https://img.freepik.com/foto-gratis/pelota-tenis-fondo-pantalla-negro-sobre-dura-cancha-tenis-azul_1150-6448.jpg");
+}
+
+.entTitle{
+    font-size: 2.2rem;
+    font-weight: 800;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.entList ul li{
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: rgb(255, 0, 0);
+    list-style: none;
+}
 
 
 /* PARA MEDIA QUERIS MIRA LA CLASE 8 Q ESTAN LOS REPASOS DE MEDIA QUERIS Y TE DICEN LOS TAMAÑOS CON TABAJAR */
@@ -567,6 +584,7 @@ form textarea {
     .divContainerNavBar ul li {
         border: none;
         border-bottom: #000 solid .1rem;
+        display: inline-block;
     }
 
     .navbar-nav li:nth-child(1) {
