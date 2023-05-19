@@ -39,11 +39,11 @@ html {
 }
 
 .navBar ul li {
-    border-left: solid .2rem #000;
     list-style: none;
     flex-grow: 1;
     font-size: 2rem;
     padding: 1rem;
+    border: solid #000 .1rem;
 }
 
 /* main */
@@ -569,8 +569,7 @@ form textarea {
 /* PARA MEDIA QUERIS MIRA LA CLASE 8 Q ESTAN LOS REPASOS DE MEDIA QUERIS Y TE DICEN LOS TAMAÑOS CON TABAJAR */
 /* 1200 768 480 320 */
 
-/* 1199px */
-@media screen and (max-width : 119.9rem) {
+@media screen and (max-width : 1199px) {
 
     /* navbar */
     .header {
@@ -634,15 +633,13 @@ form textarea {
     }
 }
 
-/* 991px */
-@media screen and (max-width : 99.1rem) {
+@media screen and (max-width : 991px) {
     .carousel-item img {
         height: 40rem;
     }
 }
 
-/* 850px */
-@media screen and (max-width : 85rem) {
+@media screen and (max-width : 850px) {
     /* index */
     .titulo{
         font-size: 4rem;
@@ -686,8 +683,7 @@ form textarea {
     }
 }
 
-/* 768px */
-@media screen and (max-width : 76.8rem) {
+@media screen and (max-width : 768px) {
     .header {
         overflow: hidden;
     }
@@ -792,8 +788,7 @@ form textarea {
 
 }
 
-/* 570px */
-@media screen and (max-width : 57rem) {
+@media screen and (max-width : 570px) {
     .form__divComida {
         grid-template-areas:
         'comida inputCom'
@@ -830,8 +825,7 @@ form textarea {
     }
 }
 
-/* 480px */
-@media screen and (max-width : 48rem) {
+@media screen and (max-width : 480px) {
 
     /* index */
     .titulo {
@@ -876,14 +870,13 @@ form textarea {
     }
 }
 
-/* 453px */
-@media screen and (max-width : 45.3rem) {
+@media screen and (max-width : 453px) {
     .form__divComida {
         margin: 0;
         grid-template-areas:
-        'comida .'
-        'inputCom inputCom'
-        'cantidad inputCant'
+            'comida .'
+            'inputCom inputCom'
+            'cantidad inputCant'
         ;
         gap: 0;
         grid-template-columns: 1fr 2fr;
@@ -921,8 +914,7 @@ form textarea {
     }
 }
 
-/* 320px */
-@media screen and (max-width : 32rem) {
+@media screen and (max-width : 320px) {
     /* index */
     .titulo {
         font-size: 2.5rem;
@@ -967,6 +959,10 @@ form textarea {
     }
 
     /* delivery */
+
+    /* .form{
+        width: 100%;
+    } */
 
     #extra{
         text-align: center;
