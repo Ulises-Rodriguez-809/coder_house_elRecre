@@ -593,6 +593,7 @@ form textarea {
 }
 
 
+
 /* PARA MEDIA QUERIS MIRA LA CLASE 8 Q ESTAN LOS REPASOS DE MEDIA QUERIS Y TE DICEN LOS TAMAÑOS CON TABAJAR */
 /* 1200 768 480 320 */
 
@@ -707,6 +708,7 @@ form textarea {
         border: #fff solid .1rem;
         border-radius: 10%;
         margin-right: .4rem;
+        background-color: #000;
     }
 }
 
