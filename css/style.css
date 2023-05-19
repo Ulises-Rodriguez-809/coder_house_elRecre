@@ -428,8 +428,8 @@ form textarea {
     width: 100%;
 }
 
-.form__divBtn--reset,
-.form__divBtn--submit,
+/* .form__divBtn--reset,
+.form__divBtn--submit, */
 .form__divBtn input {
     flex-grow: 1;
     font-size: 2.5rem;
