@@ -528,9 +528,10 @@ form textarea {
 
 
 /* entretenimiento */
-.msg-profe{
-    font-size: 1.7rem;
-    background-color: aqua;
+.sectionContainer{
+    background-color: #f66666;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .entreSubTitulo {
@@ -547,9 +548,14 @@ form textarea {
     background-color: #e4e2e2;
 }
 
-.tennisBg{
+/* .tennisBg{
     background-image: url("https://img.freepik.com/foto-gratis/pelota-tenis-fondo-pantalla-negro-sobre-dura-cancha-tenis-azul_1150-6448.jpg");
 }
+
+.futbolBg{
+    background-image: url("https://static6.depositphotos.com/1137361/623/i/600/depositphotos_6234266-stock-photo-soccer-football-on-grass-field.jpg");
+} */
+
 
 .entTitle{
     font-size: 2.2rem;
@@ -563,6 +569,27 @@ form textarea {
     font-weight: 800;
     color: rgb(255, 0, 0);
     list-style: none;
+}
+
+
+/* historia */
+.diarioFondo{
+    background-image: url("https://fondosmil.com/fondo/88721.jpg");
+    padding: 2rem;
+}
+
+
+
+.hisText{
+    display: flex;
+    background-color: #f7a3437c;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.primeraLetra{
+    color: #f00;
 }
 
 
@@ -785,7 +812,6 @@ form textarea {
     .form__divBtn {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width : 570px) {
@@ -867,6 +893,16 @@ form textarea {
     /* footer */
     .footer p {
         display: block;
+    }
+
+    /* historia */
+    .diarioFondo{
+        padding: 0rem;
+        padding-top: 1rem;
+    }
+    
+    .divCarousel div img {
+        height: 30rem;
     }
 }
 
