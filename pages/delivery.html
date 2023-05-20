@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,60 +12,65 @@
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
     <!-- link de Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-<header class="header">
-    <nav class="navbar navbar-expand-xl navBar">
-        <div class="container-fluid divContainerNavBar">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="divUlContainer collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="../index.html" class="nav-link" aria-current="page">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./menu.html" class="nav-link">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./reserva.html" class="nav-link">RESERVA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./delivery.html" class="nav-link">DELIVERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./entretenimiento.html" class="nav-link">ENTRETENIMIENTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../index.html#ubicacionContainer" class="nav-link">COMO LLEGAR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./historia.html" class="nav-link">HISTORIA</a>
-                    </li>
-                </ul>
+    <header class="header">
+        <nav class="navbar navbar-expand-xl navBar">
+            <div class="container-fluid divContainerNavBar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link" aria-current="page">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./menu.html" class="nav-link">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./reserva.html" class="nav-link">RESERVA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./delivery.html" class="nav-link">DELIVERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./entretenimiento.html" class="nav-link">ENTRETENIMIENTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../index.html#ubicacionContainer" class="nav-link">COMO LLEGAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./historia.html" class="nav-link">HISTORIA</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
     <main>
-        <div class="tituloContainer">
-            <div class="logoContainer">
-                <img src="../img/logo.jpg" alt="elRecre" class="logo">
+        <!-- titulo -->
+        <section>
+            <div class="tituloContainer">
+                <div class="logoContainer">
+                    <img src="../img/logo.jpg" alt="elRecre" class="logo logoDesaparece">
+                </div>
+                <h1 class="titulo">Club Recreativo y Deportivo Larroude</h1>
+                <div class="logoContainer">
+                    <img src="../img/logo.jpg" alt="elRecre" class="logo">
+                </div>
             </div>
-            <h1 class="titulo">Club Recreativo y Deportivo Larroude</h1>
-            <div class="logoContainer">
-                <img src="../img/logo.jpg" alt="elRecre" class="logo">
-            </div>
-        </div>
+        </section>
+        <!-- seccion formulario -->
         <section class="sectionForm">
             <form class="form">
                 <!-- datos -->
-                <div class="form__div container-fluid">
+                <div class="form__div">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
                     <label for="celular">Celular:</label>
@@ -105,8 +111,8 @@
                     <label for="cP" id="cPLabel">Cantidad:</label>
                     <input type="number" name="cP" id="cP">
                 </div>
+                <!-- Empanadas -->
                 <div class="form__divComida container-fluid">
-                    <!-- Empanadas -->
                     <label for="empanadaSeleccionada" id="form_divComida__labelEmpanada">Empanadas:</label>
                     <select name="empanadaSeleccionada" id="empanadaSeleccionada">
                         <option value="empanadaDePollo">
@@ -137,8 +143,8 @@
                     <label for="cE" id="cELabel">Cantidad:</label>
                     <input type="number" name="cE" id="cE">
                 </div>
+                <!-- carnes -->
                 <div class="form__divComida container-fluid">
-                    <!-- carnes -->
                     <label for="carneSeleccionada" id="form_divComida__labelCarne">Carnes:</label>
                     <select name="carneSeleccionada" id="carneSeleccionada">
                         <option value="matabreALaPizza">
@@ -157,8 +163,8 @@
                     <label for="cC" id="cCLabel">Cantidad:</label>
                     <input type="number" name="cC" id="cC">
                 </div>
+                <!-- bebidas -->
                 <div class="form__divComida container-fluid">
-                    <!-- bebidas -->
                     <label for="bebidaSeleccionada" id="form_divComida__labelBebida">Bebidas:</label>
                     <select name="bebidaSeleccionada" id="bebidaSeleccionada">
                         <option value="gaseosas">
@@ -180,15 +186,16 @@
                 <!-- info extra -->
                 <div class="form__div container-fluid">
                     <label for="extra">Info extra</label>
-                    <textarea name="extra" id="extra" cols="30" rows="5" placeholder="Hola! dejanos aca abajo tus anotacion (alergia, celiaquia, vegetarianismo, himpertencion, etc)"></textarea>
+                    <textarea name="extra" id="extra" cols="30" rows="5"
+                        placeholder="Hola! dejanos aca abajo tus anotacion (alergia, celiaquia, vegetarianismo, himpertencion, etc)"></textarea>
                 </div>
                 <!-- botones -->
                 <div class="form__divBtn">
-                    <!-- en reserva es distinto xq use botones pero quedo cheto igual el stilo -->
-                    <input type="reset" value="reset" class="form__divBtn--reset">
+                    <input type="reset" value="Borrar" class="form__divBtn--reset">
                     <input type="submit" value="Confirmar Pedido" class="form__divBtn--submit">
                 </div>
             </form>
+            <!-- fotos de comidas -->
             <div class="fotosComida container-fluid">
                 <ul>
                     <li>
@@ -219,6 +226,7 @@
             </div>
         </section>
     </main>
+    <!-- boton subir -->
     <div class="subirContainer">
         <a href="#">
             <img src="https://cdn-icons-png.flaticon.com/512/6364/6364313.png" alt="subir" class="redes">
@@ -246,7 +254,8 @@
     </footer>
     <!-- script Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -48,7 +48,6 @@ html {
 
 /* main */
 
-
 /* titulo */
 .tituloContainer {
     display: flex;
@@ -528,7 +527,7 @@ form textarea {
 
 
 /* entretenimiento */
-.sectionContainer{
+.sectionContainer {
     background-color: #f66666;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -538,13 +537,13 @@ form textarea {
     font-size: 3rem;
 }
 
-.carousel-item img{
+.carousel-item img {
     width: 100%;
     height: 35rem;
     max-height: 40rem;
 }
 
-.fondo{
+.fondo {
     background-color: #e4e2e2;
 }
 
@@ -557,30 +556,31 @@ form textarea {
 } */
 
 
-.entTitle{
+.entTitle {
     font-size: 2.2rem;
     font-weight: 800;
     background-color: #fff;
     display: inline-block;
 }
 
-.entList ul li{
+.entList ul li {
     font-size: 1.9rem;
     font-weight: 800;
     color: rgb(255, 0, 0);
     list-style: none;
 }
 
+.spanBg{
+    background-color: #000;
+}
 
 /* historia */
-.diarioFondo{
+.diarioFondo {
     background-image: url("https://fondosmil.com/fondo/88721.jpg");
     padding: 2rem;
 }
 
-
-
-.hisText{
+.hisText {
     display: flex;
     background-color: #f7a3437c;
     padding: 1rem;
@@ -588,10 +588,9 @@ form textarea {
     font-weight: 800;
 }
 
-.primeraLetra{
+.primeraLetra {
     color: #f00;
 }
-
 
 
 /* PARA MEDIA QUERIS MIRA LA CLASE 8 Q ESTAN LOS REPASOS DE MEDIA QUERIS Y TE DICEN LOS TAMAÑOS CON TABAJAR */
@@ -656,7 +655,8 @@ form textarea {
         justify-content: center;
     }
 
-    .publicidad, .fotosComida {
+    .publicidad,
+    .fotosComida {
         display: none;
     }
 }
@@ -668,22 +668,23 @@ form textarea {
 }
 
 @media screen and (max-width : 850px) {
+
     /* index */
-    .titulo{
+    .titulo {
         font-size: 4rem;
     }
 
-    .recomendadoMenu{
+    .recomendadoMenu {
         margin: 0;
         padding: 0;
     }
 
-    .recomendadoMenu article h3{
+    .recomendadoMenu article h3 {
         font-size: 3rem;
         margin-left: 1rem;
     }
 
-    .recContainer{
+    .recContainer {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
@@ -699,12 +700,12 @@ form textarea {
         height: 60%;
     }
 
-    .imgClubContainer a img{
+    .imgClubContainer a img {
         font-size: 3rem;
     }
 
     /* subir */
-    .subirContainer{
+    .subirContainer {
         border: #fff solid .1rem;
         border-radius: 10%;
         margin-right: .4rem;
@@ -735,7 +736,7 @@ form textarea {
         border-radius: 0%;
     }
 
-    .imgRec{
+    .imgRec {
         width: 70%;
     }
 
@@ -819,15 +820,15 @@ form textarea {
 @media screen and (max-width : 570px) {
     .form__divComida {
         grid-template-areas:
-        'comida inputCom'
-        'cantidad inputCant'
+            'comida inputCom'
+            'cantidad inputCant'
         ;
         gap: 0;
         grid-template-columns: 1fr 2fr;
         align-items: center;
     }
 
-    .form__divComida label{
+    .form__divComida label {
         text-align: center;
     }
 
@@ -860,6 +861,10 @@ form textarea {
         font-size: 3.5rem;
     }
 
+    .logoDesaparece {
+        display: none;
+    }
+
     .tituloRecomendado {
         font-size: 3rem;
     }
@@ -880,7 +885,7 @@ form textarea {
     }
 
     /* menu */
-    .menuSection{
+    .menuSection {
         margin-bottom: 1rem;
     }
 
@@ -898,11 +903,11 @@ form textarea {
     }
 
     /* historia */
-    .diarioFondo{
+    .diarioFondo {
         padding: 0rem;
         padding-top: 1rem;
     }
-    
+
     .divCarousel div img {
         height: 30rem;
     }
@@ -942,7 +947,7 @@ form textarea {
         text-align: start;
     }
 
-    .form__div{
+    .form__div {
         margin: 0;
     }
 
@@ -953,13 +958,10 @@ form textarea {
 }
 
 @media screen and (max-width : 320px) {
+
     /* index */
     .titulo {
         font-size: 2.5rem;
-    }
-
-    .logoDesaparece {
-        display: none;
     }
 
     .recomendadoMenu {
@@ -1002,7 +1004,7 @@ form textarea {
         width: 100%;
     } */
 
-    #extra{
+    #extra {
         text-align: center;
     }
 }
