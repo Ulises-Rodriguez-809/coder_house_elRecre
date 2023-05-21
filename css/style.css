@@ -419,6 +419,7 @@ form textarea {
 .form div:nth-child(3) textarea {
     border: solid .2rem #fff;
     padding: 1rem;
+    width: 100%;
 }
 
 /* botones */
@@ -815,6 +816,10 @@ form textarea {
     .form__divBtn {
         width: 100%;
     }
+
+    #extra{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width : 570px) {
@@ -999,10 +1004,6 @@ form textarea {
     }
 
     /* delivery */
-
-    /* .form{
-        width: 100%;
-    } */
 
     #extra {
         text-align: center;
