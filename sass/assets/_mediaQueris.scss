@@ -6,16 +6,14 @@
 
     /* navbar */
     .header {
-        height: fit-content;
-        width: 100%;
+        @include widthYHeight(100%,fit-content);
 
         nav {
 
             // .divContainerNavBar
             div {
                 button {
-                    padding: 1rem;
-                    margin: 1rem;
+                    @include marginYPadding(1rem,1rem);
                 }
 
                 // .navbar-nav
@@ -47,8 +45,7 @@
 
     .menuContainer {
         border-radius: 0;
-        margin: 0;
-        padding: 0;
+        @include marginYPadding(0,0);
     }
 
     // menu page
@@ -57,16 +54,14 @@
 
         // .menuSection
         section {
-            margin: 0;
-            padding: 0;
+            @include marginYPadding(0, 0);
 
             article {
                 .especialidad {
                     padding: 0;
 
                     img {
-                        width: 25rem;
-                        height: 25rem;
+                        @include widthYHeight(25rem,25rem);
                     }
                 }
 
@@ -124,9 +119,8 @@
                 }
 
                 .recContainer {
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: center;
+                    @include displayFlexYProps(column,space-between,center);
+                    width: 100%;
 
                     // .rec
                     .rec {
@@ -137,8 +131,7 @@
 
                             // .imgRec
                             .imgRec {
-                                width: 60%;
-                                height: 60%;
+                                @include widthYHeight(60%,60%);
                             }
                         }
                     }
@@ -149,7 +142,7 @@
 
     /* subir btn*/
     .subirContainer {
-        border: #fff solid .1rem;
+        @include border(solid,.1rem,#fff);
         border-radius: 10%;
         margin-right: 1rem;
         background-color: #000;
@@ -162,8 +155,7 @@
     .menuContainer {
         width: 100%;
         border: none;
-        margin: 0;
-        padding: 0;
+        @include marginYPadding(0,0);
         border-radius: 0%;
 
         section {
@@ -357,17 +349,10 @@
         }
     }
 
-    /* menu page*/
-    // .menuSection {
-    //     margin-bottom: 1rem;
-    // }
-
     .listaMenu,
     .listaMenuBebida {
+        @include displayFlexYProps(column,space-between,center);
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
     }
 
     /* footer */
@@ -380,8 +365,7 @@
 
     /* historia */
     .diarioFondo {
-        padding: 0rem;
-        padding-top: 1rem;
+        padding: 1rem 0 0 0;
     }
 
     .divCarousel{
@@ -451,8 +435,7 @@
                 a {
                     img {
                         flex-grow: 1;
-                        width: 6rem;
-                        height: 6rem;
+                        @include widthYHeight(6rem,6rem);
                         margin-top: 1.5rem;
                     }
                 }
@@ -472,30 +455,16 @@
     }
     
     /* index */
-    .menuContainer{
-        section{
-            article{
-                .recContainer{
-                    width: 100%;
-                }
-            }
-        }
-    }
-
     .recomendadoMenu{
         article{
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+            @include displayFlexYProps(column,space-between,center);
         }
     }
 
     .imgClubContainer{
         img{
-            width: 25rem;
-            height: 25rem;
+            @include widthYHeight(25rem,25rem);
         }
     }
 
