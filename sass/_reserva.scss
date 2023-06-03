@@ -1,0 +1,145 @@
+@import './assets/mixings';
+
+/* RESERVA PAGE */
+.sectionForm {
+    display: flex;
+    justify-content: space-between;
+    background-color: $bgFondoMenuForm;
+    padding: 2rem;
+
+    .publicidad {
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            li {
+                list-style: none;
+
+                img {
+                    @include widthYHeight(25rem, 25rem);
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    form {
+        background-color: $bgNavFormEntFooter;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include border(solid, .2rem, #000);
+        width: fit-content;
+
+        .form__div {
+            width: 55rem;
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+
+            /* datos, dia y select */
+            label,
+            input,
+            textarea,
+            select {
+                // color: #fff;
+                // font-size: 2.5rem;
+                // background-color: #f66666;
+                // border: none;
+                @extend .inputsProps;
+            }
+
+            input,
+            select,
+            textarea {
+                margin: 2rem 0;
+                border-bottom: solid .2rem #fff;
+
+                &:hover {
+                    background-color: $bgInputs;
+                    color: #000;
+                    outline: none;
+                }
+
+                &:focus {
+                    background-color: $bgInputs;
+                    color: #000;
+                    outline: none;
+                }
+            }
+
+            textarea {
+                @include border(solid, .2rem, #b8b4b4);
+                padding: .2rem;
+            }
+
+            input,
+            textarea {
+                &::placeholder {
+                    color: $colorLertras;
+                    opacity: .8;
+                }
+            }
+        }
+
+        /* botones */
+        .form__divBtn {
+            display: flex;
+            width: 100%;
+
+            /* .form__divBtn--reset,
+            .form__divBtn--submit, */
+            input {
+                // color: #fff;
+                //     font-size: 2.5rem;
+                //     background-color: #f66666;
+                //     border: none;
+                @extend .inputsProps;
+                flex-grow: 1;
+                font-size: 2.5rem;
+                font-weight: 800;
+                margin: 1rem .5rem;
+                border-bottom: #fff .2rem solid;
+                border-radius: 50px;
+                width: 100%;
+
+            }
+
+            .form__divBtn--reset {
+                &:hover {
+                    background-color: $bgReset;
+                    color: $colorLertras;
+                    cursor: pointer;
+                }
+
+                &:focus {
+                    background-color: $bgReset;
+                    color: $colorLertras;
+                }
+            }
+
+            .form__divBtn--submit {
+                &:hover {
+                    background-color: $bgSubmit;
+                    color: $colorLertras;
+                    cursor: pointer;
+                }
+
+                &:focus {
+                    background-color: $bgSubmit;
+                    color: $colorLertras;
+                }
+            }
+        }
+    }
+}
+
+
+/* extra */
+// .form div:nth-child(3) textarea {
+//     border: solid .2rem #fff;
+//     padding: 1rem;
+//     width: 100%;
+// }

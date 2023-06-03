@@ -1,0 +1,47 @@
+@import './assets/mixings';
+
+/* ENTRETENIMIENTO */
+.sectionContainer {
+    background-color: $bgNavFormEntFooter;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    h2{
+        font-size: 3rem;
+    }
+}
+
+.carousel-item{
+    img{
+        @include widthYHeight(100%,35rem);
+        max-height: 40rem;
+    }
+}
+
+.spanBg{
+    background-color: #000;
+}
+
+.fondo {
+    background-color: #e4e2e2;
+
+    div{
+        h3{
+            @include fontSizeYWeight(2.2rem);
+            background-color: #fff;
+            display: inline-block;
+
+        }
+
+        .entList{
+            ul{
+                li{
+                    @include fontSizeYWeight(1.9rem);
+                    color: rgb(255, 0, 0);
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+

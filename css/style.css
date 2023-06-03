@@ -1,275 +1,276 @@
-/* reseteamos las props por defecto de los navegadores */
+/* RESETER VALORES DEL NAVEGADOR */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
 }
 
-/* el truco q nos enseño el profe para q 1rem = 10px ya que si trabajas con px estos pueden variar dependiendo de la pantalla de donde se abra la pagina*/
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-/* header */
+.inputsProps {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
+}
 
-/* nav */
-
+/* HEADER */
+/* NAVBAR */
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-
-.navBar {
-    margin: 0;
-    padding: 0;
-    background-color: #f66666;
-    width: 100%;
+.header nav {
+  margin: 0;
+  padding: 0;
+  background-color: #f66666;
+  width: 100%;
 }
-
-.divContainerNavBar {
-    padding: 0;
+.header nav .divContainerNavBar {
+  padding: 0;
 }
 
 .navBar ul {
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: nowrap;
-    text-align: center;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  text-align: center;
 }
-
 .navBar ul li {
-    list-style: none;
-    flex-grow: 1;
-    font-size: 2rem;
-    padding: 1rem;
-    border: solid #000 .1rem;
+  list-style: none;
+  flex-grow: 1;
+  font-size: 2rem;
+  padding: 1rem;
+  border: solid 0.1rem #000;
 }
 
-/* main */
+.inputsProps {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
+}
 
-/* titulo */
+/* FOOTER */
+.footer {
+  margin-top: 10rem;
+  border: solid 0.2rem #000;
+  overflow: hidden;
+  background-image: url("../img/fondo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+  text-align: center;
+}
+.footer p {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 800;
+  background-color: #f66666;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f66666;
+  margin-top: 4rem;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a img {
+  padding: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.inputsProps {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
+}
+
+/* TITULO */
 .tituloContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: center;
-    margin-bottom: 5rem;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+.tituloContainer div img {
+  margin-top: 2rem;
+  width: 8rem;
+  height: 8rem;
+}
+.tituloContainer h1 {
+  border-bottom: solid 0.2rem #000;
+  font-size: 5rem;
+  font-weight: 800;
 }
 
-.logo {
-    margin-top: 2rem;
-    height: 8rem;
-    width: 8rem;
+.inputsProps {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
 }
 
-.titulo {
-    font-size: 5rem;
-    border-bottom: solid .2rem #000;
-    font-weight: 800;
+/* BTN SUBIR */
+.subirContainer {
+  text-align: end;
+  position: sticky;
+  bottom: 6rem;
+  left: 100%;
+  margin-top: 2rem;
+  display: inline-block;
+}
+.subirContainer a img {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
-/* menu recomendado contenedor */
+.inputsProps {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
+}
+
+/*INDEX */
 .menuContainer {
-    background-color: rgb(94, 96, 96);
-    margin: 2rem;
-    padding: 2rem;
-    border: dashed .4rem #000;
-    border-radius: 5%;
+  background-color: rgb(94, 96, 96);
+  margin: 2rem;
+  padding: 2rem;
+  border: dashed 0.4rem #000;
+  border-radius: 5%;
 }
-
-/* titulo menu recomendado */
-.tituloRecomendado {
-    text-align: center;
-    font-size: 4rem;
-    color: #f8f870;
+.menuContainer h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: #f8f870;
 }
-
-/* secciones del menu */
-.recomendadoMenu {
-    background-color: #767575;
-    margin: 1rem;
-    font-size: 3rem;
-    padding: 2rem;
-    text-align: center;
+.menuContainer section {
+  background-color: #767575;
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 3rem;
 }
-
-/* comida y bebida recomendado */
-.recomendadoMenu h3 {
-    text-align: left;
-    font-size: 4rem;
+.menuContainer section article h3 {
+  text-align: left;
+  font-size: 4rem;
 }
-
-/* contenedor del img y precio */
 
 .recContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* background-image: url("../WhatsApp\ Image\ 2023-05-14\ at\ 9.56.20\ PM.jpeg"); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.recContainer .rec {
+  text-align: center;
+  margin-top: 2rem;
+}
+.recContainer .rec div img {
+  width: 40rem;
+  height: 20rem;
+}
+.recContainer .rec div p {
+  font-size: 3rem;
+  font-weight: 800;
 }
 
-.rec {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.rec div p {
-    font-size: 3rem;
-    font-weight: 800;
-}
-
-.imgRec {
-    width: 40rem;
-    height: 20rem;
-}
-
-
-/* ubicacion */
-
+/* UBICACION */
 #ubicacionContainer {
-    margin-top: 15rem;
+  margin-top: 15rem;
 }
 
 .imgClubContainer {
-    text-align: center;
-    margin-bottom: 10rem;
-    font-size: 4rem;
-    font-weight: 800;
+  text-align: center;
+  margin-bottom: 10rem;
+  font-size: 4rem;
+  font-weight: 800;
 }
-
-.imgClub {
-    border: solid 2px #000;
-    border-radius: 50%;
-    width: 30rem;
-    height: 30rem;
+.imgClubContainer img {
+  border: solid 0.2rem #000;
+  border-radius: 50%;
+  width: 30rem;
+  height: 30rem;
 }
 
 .maps {
-    overflow: hidden;
+  overflow: hidden;
+}
+.maps iframe {
+  width: 100%;
 }
 
-.mapsIframe {
-    width: 100%;
+.inputsProps {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
 }
 
-/* boton subir */
-.subirContainer {
-    text-align: end;
-    position: sticky;
-    bottom: 6rem;
-    left: 100%;
-    margin-top: 2rem;
-    display: inline-block;
-}
-
-/* footer */
-.footer {
-    margin-top: 10rem;
-    border: solid #000 .2rem;
-    overflow: hidden;
-    background-image: url("../img/fondo2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 20rem;
-    text-align: center;
-}
-
-.footer p {
-    display: inline-block;
-    font-size: 4rem;
-    font-weight: 800;
-    background-color: #f66666;
-
-}
-
-.footer ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f66666;
-    margin-top: 4rem;
-}
-
-.footer ul li {
-    list-style: none;
-}
-
-.redes {
-    padding: .5rem;
-    width: 4rem;
-    height: 5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
-
-
-/* menu page */
-
-/* el titulo del menu tiene la misma clase q la del index para asi reutilizar clases capaz hace falta poner un nombre mas general como para q pegue con el contenido del index y menu */
+/* MENU PAGE */
 .menu {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
-
-.menuSection {
-    background-color: #767575;
-    margin: 2rem;
-    padding: 1rem;
+.menu section {
+  background-color: #767575;
+  margin: 2rem;
+  padding: 1rem;
 }
-
-.menuSection h3 {
-    font-size: 3rem;
-    font-weight: 800;
+.menu section h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-left: 1rem;
 }
-
-.menuSection img {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
+.menu section img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+.menu section li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 .especialidad {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.especialidad li {
-    list-style: none;
-    font-size: 3rem;
-    font-weight: 800;
-    text-align: center;
+.especialidad li img {
+  width: 30rem;
+  height: 30rem;
 }
-
-.especialidad img {
-    width: 30rem;
-    height: 30rem;
-}
-
 
 .listaMenu {
-    display: grid;
-    grid-template-areas:
-        'uno dos tres'
-        'cuatro cinco seis'
-        '. ocho .'
-    ;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 2rem;
-}
-
-.menuSection li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    font-size: 2.5rem;
-    font-weight: 800;
+  display: grid;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis" ". ocho .";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 2rem;
 }
 
 /* comidas posiciones */
@@ -277,735 +278,647 @@ html {
 #eJQ,
 #cMP,
 #bC {
-    grid-area: uno;
+  grid-area: uno;
 }
 
 #pRoque,
 #eRoque,
 #cLP,
 #bV {
-    grid-area: dos;
+  grid-area: dos;
 }
 
 #pPal,
 #eCF,
 #cChin,
 #bW {
-    grid-area: tres;
+  grid-area: tres;
 }
 
 #pPQ,
 #eAr,
 #cVac,
 #bGin {
-    grid-area: cuatro;
+  grid-area: cuatro;
 }
 
 #pMo,
 #ePo,
 #cTA,
 #bM {
-    grid-area: cinco;
+  grid-area: cinco;
 }
 
 #pRuc,
 #eQC,
 #cTF,
 #bTS {
-    grid-area: seis;
+  grid-area: seis;
 }
 
 #pCal,
 #eCho,
 #cSM,
 #bD {
-    grid-area: ocho;
+  grid-area: ocho;
 }
 
-
 /* bebidas sin alchool*/
-/* esto de aca capaz lo cambio en ves de dividir las bebidas en el index en 2 secciones una para con alcohol y otra sin capaz haga una sola y haga un grid area de 10 */
 .bebidasSinAl {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .listaMenuBebida {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 
+.inputsProps, .sectionForm form .form__divBtn input, .sectionForm form .form__div label,
+.sectionForm form .form__div input,
+.sectionForm form .form__div textarea,
+.sectionForm form .form__div select {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
+}
 
 /* RESERVA PAGE */
-
 .sectionForm {
-    display: flex;
-    justify-content: space-between;
-    background-color: #767575;
-    padding: 2rem;
-
+  display: flex;
+  justify-content: space-between;
+  background-color: #767575;
+  padding: 2rem;
 }
-
-.publicidad ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    list-style: none;
+.sectionForm .publicidad ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
-
-.publicidad img {
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
+.sectionForm .publicidad ul li {
+  list-style: none;
 }
-
-.form {
-    background-color: #f66666;
-    display: flex;
-    border: solid .2rem #000;
-    align-items: center;
-    flex-direction: column;
-    width: fit-content;
+.sectionForm .publicidad ul li img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
 }
-
-.form__div {
-    width: 55rem;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
+.sectionForm form {
+  background-color: #f66666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 0.2rem #000;
+  width: fit-content;
+  /* botones */
 }
-
-/* datos, dia y select */
-.form label,
-.form input,
-.form textarea,
-form select {
-    color: #fff;
-    font-size: 2.5rem;
-    background-color: #f66666;
-    border: none;
+.sectionForm form .form__div {
+  width: 55rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  /* datos, dia y select */
 }
-
-.form textarea {
-    border: solid #b8b4b4 .2rem;
-    padding: .2rem;
+.sectionForm form .form__div input,
+.sectionForm form .form__div select,
+.sectionForm form .form__div textarea {
+  margin: 2rem 0;
+  border-bottom: solid 0.2rem #fff;
 }
-
-.form input,
-form select,
-form textarea {
-    margin: 2rem 0;
-    border-bottom: solid .2rem #fff;
-    margin-bottom: 2rem;
+.sectionForm form .form__div input:hover,
+.sectionForm form .form__div select:hover,
+.sectionForm form .form__div textarea:hover {
+  background-color: #f8f870;
+  color: #000;
+  outline: none;
 }
-
-.form input::placeholder,
-.form textarea::placeholder {
-    color: #fff;
-    opacity: .8;
+.sectionForm form .form__div input:focus,
+.sectionForm form .form__div select:focus,
+.sectionForm form .form__div textarea:focus {
+  background-color: #f8f870;
+  color: #000;
+  outline: none;
 }
-
-/* esto capaz lo pogo  todavia queda en duda*/
-.form input:focus,
-.form textarea:focus,
-.form select:focus {
-    background-color: #f8f870;
-    color: #000;
-    outline: none;
+.sectionForm form .form__div textarea {
+  border: solid 0.2rem #b8b4b4;
+  padding: 0.2rem;
+}
+.sectionForm form .form__div input::placeholder,
+.sectionForm form .form__div textarea::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+.sectionForm form .form__divBtn {
+  display: flex;
+  width: 100%;
+  /* .form__divBtn--reset,
+  .form__divBtn--submit, */
+}
+.sectionForm form .form__divBtn input {
+  flex-grow: 1;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1rem 0.5rem;
+  border-bottom: #fff 0.2rem solid;
+  border-radius: 50px;
+  width: 100%;
+}
+.sectionForm form .form__divBtn .form__divBtn--reset:hover {
+  background-color: rgb(248, 5, 5);
+  color: #fff;
+  cursor: pointer;
+}
+.sectionForm form .form__divBtn .form__divBtn--reset:focus {
+  background-color: rgb(248, 5, 5);
+  color: #fff;
+}
+.sectionForm form .form__divBtn .form__divBtn--submit:hover {
+  background-color: rgb(43, 177, 43);
+  color: #fff;
+  cursor: pointer;
+}
+.sectionForm form .form__divBtn .form__divBtn--submit:focus {
+  background-color: rgb(43, 177, 43);
+  color: #fff;
 }
 
 /* extra */
-.form div:nth-child(3) textarea {
-    border: solid .2rem #fff;
-    padding: 1rem;
-    width: 100%;
+.inputsProps, form label, form input, form textarea, form select {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
 }
 
-/* botones */
-.form__divBtn {
-    display: flex;
-    width: 100%;
+/* DELIVIRY PAGE*/
+form input, form select, form textarea {
+  margin: 2rem 0;
+  border-bottom: solid 0.2rem #fff;
 }
-
-/* .form__divBtn--reset,
-.form__divBtn--submit, */
-.form__divBtn input {
-    flex-grow: 1;
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin: 1rem .5rem;
-    border-bottom: #fff .2rem solid;
-    border-radius: 50px;
-    width: 100%;
+form input:focus, form select:focus, form textarea:focus {
+  background-color: #f8f870;
+  color: #000;
+  outline: none;
 }
-
-.form__divBtn input:nth-child(1):focus {
-    background-color: red;
-    color: #fff;
+form input::placeholder, form select::placeholder, form textarea::placeholder {
+  color: #fff;
+  opacity: 0.8;
 }
-
-.form__divBtn input:nth-child(2):focus {
-    background-color: rgb(43, 177, 43);
-    color: #fff;
-}
-
-.form__divBtn--submit:hover {
-    background-color: rgb(43, 177, 43);
-    color: #fff;
-    cursor: pointer;
-}
-
-.form__divBtn--reset:hover {
-    background-color: rgb(248, 5, 5);
-    color: #fff;
-    cursor: pointer;
-}
-
-
-/* delivery page*/
-.form__divComida {
-    display: grid;
-    grid-template-areas:
-        'comida inputCom cantidad inputCant'
-    ;
-    gap: 3rem;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
+form .form__divComida {
+  display: grid;
+  grid-template-areas: "comida inputCom cantidad inputCant";
+  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
 }
 
 #form_divComida__labelPizza,
 #form_divComida__labelEmpanada,
 #form_divComida__labelCarne,
 #form_divComida__labelBebida {
-    grid-area: comida;
+  grid-area: comida;
 }
 
 #pizzaSeleccionada,
 #empanadaSeleccionada,
 #carneSeleccionada,
 #bebidaSeleccionada {
-    grid-area: inputCom;
-    width: 15rem;
+  grid-area: inputCom;
+  width: 15rem;
 }
 
 #cPLabel,
 #cELabel,
 #cCLabel,
 #cBLabel {
-    grid-area: cantidad;
-    text-align: right;
+  grid-area: cantidad;
+  text-align: right;
 }
 
 #cP,
 #cE,
 #cC,
 #cB {
-    grid-area: inputCant;
-    width: 6rem;
+  grid-area: inputCant;
+  width: 6rem;
 }
 
 .fotosComida {
-    flex-grow: 1;
+  flex-grow: 1;
 }
-
 .fotosComida ul {
-    list-style: none;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 250px);
-    justify-content: center;
-    text-align: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 250px);
+  text-align: center;
+}
+.fotosComida ul li {
+  list-style: none;
+}
+.fotosComida ul li img {
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
 }
 
-/* se q las propiedades son las mismas q en page reserva pero necesitaba tamaños distinto */
-.fotosComida img {
-    border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
+.inputsProps {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
 }
 
-
-/* entretenimiento */
+/* ENTRETENIMIENTO */
 .sectionContainer {
-    background-color: #f66666;
-    padding: 1rem;
-    margin-bottom: 1rem;
+  background-color: #f66666;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
-
-.entreSubTitulo {
-    font-size: 3rem;
+.sectionContainer h2 {
+  font-size: 3rem;
 }
 
 .carousel-item img {
-    width: 100%;
-    height: 35rem;
-    max-height: 40rem;
-}
-
-.fondo {
-    background-color: #e4e2e2;
-}
-
-/* .tennisBg{
-    background-image: url("https://img.freepik.com/foto-gratis/pelota-tenis-fondo-pantalla-negro-sobre-dura-cancha-tenis-azul_1150-6448.jpg");
-}
-
-.futbolBg{
-    background-image: url("https://static6.depositphotos.com/1137361/623/i/600/depositphotos_6234266-stock-photo-soccer-football-on-grass-field.jpg");
-} */
-
-
-.entTitle {
-    font-size: 2.2rem;
-    font-weight: 800;
-    background-color: #fff;
-    display: inline-block;
-}
-
-.entList ul li {
-    font-size: 1.9rem;
-    font-weight: 800;
-    color: rgb(255, 0, 0);
-    list-style: none;
+  width: 100%;
+  height: 35rem;
+  max-height: 40rem;
 }
 
 .spanBg {
-    background-color: #000;
+  background-color: #000;
 }
 
-/* historia */
+.fondo {
+  background-color: #e4e2e2;
+}
+.fondo div h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background-color: #fff;
+  display: inline-block;
+}
+.fondo div .entList ul li {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: rgb(255, 0, 0);
+  list-style: none;
+}
+
+.inputsProps {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
+}
+
+/* HISTORIA */
 .diarioFondo {
-    background-image: url("https://fondosmil.com/fondo/88721.jpg");
-    padding: 2rem;
+  background-image: url("https://fondosmil.com/fondo/88721.jpg");
+  padding: 2rem;
 }
 
 .hisText {
-    display: flex;
-    background-color: #f7a3437c;
-    padding: 1rem;
-    font-size: 3rem;
-    font-weight: 800;
+  display: flex;
+  background-color: rgba(247, 163, 67, 0.4862745098);
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.hisText div {
+  color: #f00;
 }
 
-.primeraLetra {
-    color: #f00;
+.inputsProps {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #f66666;
+  border: none;
 }
 
-
-/* PARA MEDIA QUERIS MIRA LA CLASE 8 Q ESTAN LOS REPASOS DE MEDIA QUERIS Y TE DICEN LOS TAMAÑOS CON TABAJAR */
 /* 1200 768 480 320 */
-
-@media screen and (max-width : 1199px) {
-
-    /* navbar */
-    .header {
-        height: fit-content;
-        width: 100%;
-    }
-
-    .navBar button {
-        padding: 1rem;
-        margin: 1rem;
-    }
-
-    .divContainerNavBar ul li {
-        border: none;
-        border-bottom: #000 solid .1rem;
-        display: inline-block;
-    }
-
-    .navbar-nav li:nth-child(1) {
-        border-top: solid #000 .1rem;
-    }
-
-    /* titulo en las pages */
-    .titulo {
-        border: none;
-    }
-
-    /* menu */
-
-    .menuContainer {
-        border-radius: 0;
-        margin: 0;
-        padding: 0;
-    }
-
-    .menu {
-        padding: 0 1rem;
-    }
-
-    .especialidad img {
-        width: 25rem;
-        height: 25rem;
-    }
-
-    .menuSection {
-        margin: 0;
-        padding: 0;
-    }
-
-    .listaMenu {
-        gap: 0;
-    }
-
-    /* reserva y delivery*/
-    .sectionForm {
-        justify-content: center;
-    }
-
-    .publicidad,
-    .fotosComida {
-        display: none;
-    }
+@media screen and (max-width: 1199px) {
+  /* navbar */
+  .header {
+    height: fit-content;
+    width: 100%;
+  }
+  .header nav div button {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .header nav div div ul li {
+    border: none;
+    border-bottom: #000 solid 0.1rem;
+    display: inline-block;
+  }
+  .header nav div div ul li:nth-child(1) {
+    border-top: solid #000 0.1rem;
+  }
+  /* titulo en las pages */
+  .tituloContainer h1 {
+    border: none;
+  }
+  /* index y menu page */
+  .menuContainer {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .menu {
+    padding: 0 1rem;
+  }
+  .menu section {
+    margin: 0;
+    padding: 0;
+  }
+  .menu section article .especialidad {
+    padding: 0;
+  }
+  .menu section article .especialidad img {
+    width: 25rem;
+    height: 25rem;
+  }
+  .menu section article .listaMenu {
+    gap: 0;
+    padding: 0;
+  }
+  /* reserva y delivery*/
+  .sectionForm {
+    justify-content: center;
+  }
+  .sectionForm .publicidad,
+  .sectionForm .fotosComida {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .carousel-item img {
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  /* index */
+  .tituloContainer h1 {
+    font-size: 4rem;
+  }
+  .menuContainer section {
+    margin: 0 0 1rem 0;
+    padding: 0;
+  }
+  .menuContainer section article h3 {
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 1rem;
+  }
+  .menuContainer section article .recContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menuContainer section article .recContainer .rec {
+    width: 100%;
+    height: fit-content;
+  }
+  .menuContainer section article .recContainer .rec div .imgRec {
+    width: 60%;
+    height: 60%;
+  }
+  /* subir btn*/
+  .subirContainer {
+    border: #fff solid 0.1rem;
+    border-radius: 10%;
+    margin-right: 1rem;
+    background-color: #000;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* index */
+  .menuContainer {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0%;
+  }
+  .menuContainer section article .recContainer .rec div .imgRec {
+    width: 70%;
+    height: 60%;
+  }
+  /* menu page*/
+  .menu {
+    padding: 0;
+  }
+  .menu section article .listaMenu,
+  .menu section article .listaMenuBebida {
+    margin: 0;
+    grid-template-areas: none;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #pMuz,
+  #pRoque,
+  #pPal,
+  #pPQ,
+  #pMo,
+  #pRuc,
+  #pCal,
+  #eJQ,
+  #eRoque,
+  #eCF,
+  #eAr,
+  #ePo,
+  #eQC,
+  #eCho,
+  #cMP,
+  #cLP,
+  #cChin,
+  #cVac,
+  #cTA,
+  #cTF,
+  #cSM,
+  #bC,
+  #bV,
+  #bW,
+  #bGin,
+  #bM,
+  #bTS,
+  #bD {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: center;
+    justify-content: normal;
+  }
+  /* reserva  y delivery*/
+  .sectionForm {
+    background-color: #f66666;
+    padding: 0;
+  }
+  .sectionForm form {
+    border: none;
+    flex-grow: 1;
+  }
+  .sectionForm form .form__div {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sectionForm form .form__div label,
+  .sectionForm form .form__div input,
+  .sectionForm form .form__div select {
+    width: 100%;
+  }
+  .sectionForm form .form__divBtn {
+    width: 100%;
+  }
+  .sectionForm form #extra {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 570px) {
+  form .form__divComida {
+    grid-template-areas: "comida inputCom" "cantidad inputCant";
+    gap: 0;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+  form .form__divComida label {
+    text-align: center;
+  }
+  #pizzaSeleccionada,
+  #empanadaSeleccionada,
+  #carneSeleccionada,
+  #bebidaSeleccionada {
+    grid-area: inputCom;
+    width: 90%;
+  }
+  #cPLabel,
+  #cELabel,
+  #cCLabel,
+  #cBLabel {
+    grid-area: cantidad;
+    text-align: center;
+  }
+  /* entrenimiento 
+  esto capaz no lo pongo xq creo se ve mejor en 40rem pero esta en duda*/
+}
+@media screen and (max-width: 480px) {
+  /* titulo */
+  .tituloContainer h1 {
+    font-size: 3.5rem;
+  }
+  .tituloContainer .logoDesaparece {
+    display: none;
+  }
+  .menuContainer h2 {
+    font-size: 3rem;
+  }
+  .menuContainer section article h3 {
+    font-size: 2.5rem;
+  }
+  .menuContainer section article .recContainer .rec div .imgRec {
+    width: 100%;
+  }
+  .menuContainer section article .recContainer .rec div p {
+    font-size: 2.5rem;
+  }
+  .imgClubContainer p {
+    font-size: 2.5rem;
+  }
+  /* menu page*/
+  .listaMenu,
+  .listaMenuBebida {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* footer */
+  .footer p {
+    display: block;
+    font-size: 3rem;
+  }
+  /* historia */
+  .diarioFondo {
+    padding: 0rem;
+    padding-top: 1rem;
+  }
+  .divCarousel div img {
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 453px) {
+  form .form__divComida {
+    margin: 0;
+    grid-template-areas: "comida ." "inputCom inputCom" "cantidad inputCant";
+    gap: 0;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 2rem;
+  }
+  form .form__divComida label {
+    text-align: start;
+  }
+  #pizzaSeleccionada,
+  #empanadaSeleccionada,
+  #carneSeleccionada,
+  #bebidaSeleccionada {
+    grid-area: inputCom;
+    width: 100%;
+  }
+  #cPLabel,
+  #cELabel,
+  #cCLabel,
+  #cBLabel {
+    grid-area: cantidad;
+    text-align: start;
+  }
+  /* entrenimiento */
+  .carousel-item img {
+    height: 30rem;
+  }
+  /* footer img redes en columna*/
+  .footer {
+    height: fit-content;
+  }
+  .footer ul {
+    flex-direction: column;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+  .footer ul li a img {
+    flex-grow: 1;
+    width: 6rem;
+    height: 6rem;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tituloContainer h1 {
+    font-size: 3rem;
+  }
+  /* index */
+  .recContainer {
+    width: 100%;
+  }
+  .recomendadoMenu article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .imgClubContainer img {
+    width: 25rem;
+    height: 25rem;
+  }
+  /* delivery */
+  #extra {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width : 991px) {
-    .carousel-item img {
-        height: 40rem;
-    }
-}
-
-@media screen and (max-width : 850px) {
-
-    /* index */
-    .titulo {
-        font-size: 4rem;
-    }
-
-    .recomendadoMenu {
-        margin: 0;
-        padding: 0;
-    }
-
-    .recomendadoMenu article h3 {
-        font-size: 3rem;
-        margin-left: 1rem;
-    }
-
-    .recContainer {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .rec {
-        width: 100%;
-        height: fit-content;
-    }
-
-    .imgRec {
-        width: 60%;
-        height: 60%;
-    }
-
-    .imgClubContainer a img {
-        font-size: 3rem;
-    }
-
-    /* subir */
-    .subirContainer {
-        border: #fff solid .1rem;
-        border-radius: 10%;
-        margin-right: .4rem;
-        background-color: #000;
-    }
-}
-
-@media screen and (max-width : 768px) {
-    .header {
-        overflow: hidden;
-    }
-
-    /* index */
-    .titulo {
-        font-size: 4.5rem;
-        border: none;
-    }
-
-    /* .container {
-        background-color: rgb(94, 96, 96);
-    } */
-
-    .menuContainer {
-        width: 100%;
-        border: none;
-        margin: 0;
-        padding: 0;
-        border-radius: 0%;
-    }
-
-    .imgRec {
-        width: 70%;
-    }
-
-
-    /* menu */
-    .menu {
-        padding: 0;
-    }
-
-    .listaMenu,
-    .listaMenuBebida {
-        margin: 0;
-        padding: 0;
-        grid-template-areas: none;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #pMuz,
-    #pRoque,
-    #pPal,
-    #pPQ,
-    #pMo,
-    #pRuc,
-    #pCal,
-    #eJQ,
-    #eRoque,
-    #eCF,
-    #eAr,
-    #ePo,
-    #eQC,
-    #eCho,
-    #cMP,
-    #cLP,
-    #cChin,
-    #cVac,
-    #cTA,
-    #cTF,
-    #cSM,
-    #bC,
-    #bV,
-    #bW,
-    #bGin,
-    #bM,
-    #bTS,
-    #bD {
-        grid-column: auto;
-        grid-row: auto;
-        text-align: center;
-        justify-content: normal;
-    }
-
-    /* reserva */
-    .sectionForm {
-        background-color: #f66666;
-        padding: 0;
-    }
-
-    .form {
-        border: none;
-        flex-grow: 1;
-    }
-
-    .form__div {
-        width: 95%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .form__div label,
-    .form__div input,
-    .form__div select {
-        width: 100%;
-    }
-
-    .form__divBtn {
-        width: 100%;
-    }
-
-    #extra{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width : 570px) {
-    .form__divComida {
-        grid-template-areas:
-            'comida inputCom'
-            'cantidad inputCant'
-        ;
-        gap: 0;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-    }
-
-    .form__divComida label {
-        text-align: center;
-    }
-
-    #pizzaSeleccionada,
-    #empanadaSeleccionada,
-    #carneSeleccionada,
-    #bebidaSeleccionada {
-        grid-area: inputCom;
-        width: 90%;
-    }
-
-    #cPLabel,
-    #cELabel,
-    #cCLabel,
-    #cBLabel {
-        grid-area: cantidad;
-        text-align: center;
-    }
-
-    /* entrenimiento */
-    .carousel-item img {
-        height: 25rem;
-    }
-}
-
-@media screen and (max-width : 480px) {
-
-    /* index */
-    .titulo {
-        font-size: 3.5rem;
-    }
-
-    .logoDesaparece {
-        display: none;
-    }
-
-    .tituloRecomendado {
-        font-size: 3rem;
-    }
-
-    .recomendadoMenu {
-        background-color: rgb(94, 96, 96);
-    }
-
-    .imgRec {
-        width: 100%;
-    }
-
-    .recomendadoMenu article h3,
-    .rec div p,
-    .imgClubContainer p,
-    .footer p {
-        font-size: 2.5rem;
-    }
-
-    /* menu */
-    .menuSection {
-        margin-bottom: 1rem;
-    }
-
-    .listaMenu,
-    .listaMenuBebida {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* footer */
-    .footer p {
-        display: block;
-    }
-
-    /* historia */
-    .diarioFondo {
-        padding: 0rem;
-        padding-top: 1rem;
-    }
-
-    .divCarousel div img {
-        height: 30rem;
-    }
-}
-
-@media screen and (max-width : 453px) {
-    .form__divComida {
-        margin: 0;
-        grid-template-areas:
-            'comida .'
-            'inputCom inputCom'
-            'cantidad inputCant'
-        ;
-        gap: 0;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        padding: 2rem;
-    }
-
-    .form__divComida label {
-        text-align: start;
-    }
-
-    #pizzaSeleccionada,
-    #empanadaSeleccionada,
-    #carneSeleccionada,
-    #bebidaSeleccionada {
-        grid-area: inputCom;
-        width: 100%;
-    }
-
-    #cPLabel,
-    #cELabel,
-    #cCLabel,
-    #cBLabel {
-        grid-area: cantidad;
-        text-align: start;
-    }
-
-    .form__div {
-        margin: 0;
-    }
-
-    /* entrenimiento */
-    .carousel-item img {
-        height: 18rem;
-    }
-}
-
-@media screen and (max-width : 320px) {
-
-    /* index */
-    .titulo {
-        font-size: 2.5rem;
-    }
-
-    .recomendadoMenu {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    .recomendadoMenu article {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .tituloRecomendado {
-        font-size: 3rem;
-    }
-
-    .imgRec {
-        width: 100%;
-    }
-
-    .recomendadoMenu article h3,
-    .rec div p,
-    .imgClubContainer p,
-    .footer p {
-        font-size: 2.5rem;
-    }
-
-    .imgClub {
-        width: 25rem;
-        height: 25rem;
-    }
-
-    /* delivery */
-
-    #extra {
-        text-align: center;
-    }
-}
+/*# sourceMappingURL=style.css.map */

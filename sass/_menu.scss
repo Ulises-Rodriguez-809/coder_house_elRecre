@@ -1,0 +1,113 @@
+@import './assets/mixings';
+
+/* MENU PAGE */
+.menu {
+    margin-top: 2rem;
+
+    //.menuSection
+    section{
+        background-color: $bgFondoMenuForm;
+        @include marginYPadding(2rem, 1rem);
+
+        h3{
+            @include fontSizeYWeight(3rem);
+            padding-left: 1rem
+            // margin-bottom: 3rem;
+        }
+        
+        img{
+            @include widthYHeight(20rem, 20rem);
+            border-radius: 50%;
+        }
+
+        li{
+            @include displayFlexYProps(column, center, center);
+            list-style: none;
+            @include fontSizeYWeight(2.5rem);
+        }
+    }
+}
+
+.especialidad {
+    @include displayFlexYProps(column, center, center);
+
+    li{
+        img{
+            @include widthYHeight(30rem, 30rem);
+        }
+    }
+}
+
+.listaMenu {
+    display: grid;
+    grid-template-areas:
+        'uno dos tres'
+        'cuatro cinco seis'
+        '. ocho .'
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+/* comidas posiciones */
+//talves aca si cambio los nombres de los id por algo mas numerico pueda hacer un for
+#pMuz,
+#eJQ,
+#cMP,
+#bC {
+    grid-area: uno;
+}
+
+#pRoque,
+#eRoque,
+#cLP,
+#bV {
+    grid-area: dos;
+}
+
+#pPal,
+#eCF,
+#cChin,
+#bW {
+    grid-area: tres;
+}
+
+#pPQ,
+#eAr,
+#cVac,
+#bGin {
+    grid-area: cuatro;
+}
+
+#pMo,
+#ePo,
+#cTA,
+#bM {
+    grid-area: cinco;
+}
+
+#pRuc,
+#eQC,
+#cTF,
+#bTS {
+    grid-area: seis;
+}
+
+#pCal,
+#eCho,
+#cSM,
+#bD {
+    grid-area: ocho;
+}
+
+/* bebidas sin alchool*/
+.bebidasSinAl {
+    margin-bottom: 2rem;
+}
+
+.listaMenuBebida {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}

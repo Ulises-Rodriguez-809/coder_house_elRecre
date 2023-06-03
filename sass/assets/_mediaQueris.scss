@@ -1,0 +1,500 @@
+@import 'mixings';
+
+/* 1200 768 480 320 */
+
+@media screen and (max-width : 1199px) {
+
+    /* navbar */
+    .header {
+        height: fit-content;
+        width: 100%;
+
+        nav {
+
+            // .divContainerNavBar
+            div {
+                button {
+                    padding: 1rem;
+                    margin: 1rem;
+                }
+
+                // .navbar-nav
+                div {
+                    ul {
+                        li {
+                            border: none;
+                            border-bottom: #000 solid .1rem;
+                            display: inline-block;
+                        }
+                    }
+
+                    ul li:nth-child(1) {
+                        border-top: solid #000 .1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* titulo en las pages */
+    .tituloContainer {
+        h1 {
+            border: none;
+        }
+    }
+
+    /* index y menu page */
+
+    .menuContainer {
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    // menu page
+    .menu {
+        padding: 0 1rem;
+
+        // .menuSection
+        section {
+            margin: 0;
+            padding: 0;
+
+            article {
+                .especialidad {
+                    padding: 0;
+
+                    img {
+                        width: 25rem;
+                        height: 25rem;
+                    }
+                }
+
+                .listaMenu {
+                    gap: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    /* reserva y delivery*/
+    .sectionForm {
+        justify-content: center;
+
+        // .publicidad(reserva) y .fotosComida(delivery)
+        .publicidad,
+        .fotosComida {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width : 991px) {
+
+    // entretenimiento y historia
+    .carousel-item {
+        img {
+            height: 40rem;
+        }
+    }
+}
+
+@media screen and (max-width : 850px) {
+
+    /* index */
+    .tituloContainer {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .menuContainer {
+
+        // .recomendadoMenu
+        section {
+            margin: 0 0 1rem 0;
+            padding: 0;
+
+            article {
+                h3 {
+                    text-align: left;
+                    font-size: 3rem;
+                    margin-left: 1rem;
+                }
+
+                .recContainer {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    // .rec
+                    .rec {
+                        width: 100%;
+                        height: fit-content;
+
+                        div {
+
+                            // .imgRec
+                            .imgRec {
+                                width: 60%;
+                                height: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* subir btn*/
+    .subirContainer {
+        border: #fff solid .1rem;
+        border-radius: 10%;
+        margin-right: 1rem;
+        background-color: #000;
+    }
+}
+
+@media screen and (max-width : 768px) {
+
+    /* index */
+    .menuContainer {
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        border-radius: 0%;
+
+        section {
+            article {
+                .recContainer {
+                    .rec {
+                        div {
+                            .imgRec {
+                                @include widthYHeight(70%, 60%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* menu page*/
+    .menu {
+        padding: 0;
+
+        section {
+            article {
+
+                .listaMenu,
+                .listaMenuBebida {
+                    margin: 0;
+                    grid-template-areas: none;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+
+    #pMuz,
+    #pRoque,
+    #pPal,
+    #pPQ,
+    #pMo,
+    #pRuc,
+    #pCal,
+    #eJQ,
+    #eRoque,
+    #eCF,
+    #eAr,
+    #ePo,
+    #eQC,
+    #eCho,
+    #cMP,
+    #cLP,
+    #cChin,
+    #cVac,
+    #cTA,
+    #cTF,
+    #cSM,
+    #bC,
+    #bV,
+    #bW,
+    #bGin,
+    #bM,
+    #bTS,
+    #bD {
+        grid-column: auto;
+        grid-row: auto;
+        text-align: center;
+        justify-content: normal;
+    }
+
+    /* reserva  y delivery*/
+    .sectionForm {
+        background-color: #f66666;
+        padding: 0;
+
+        form {
+            border: none;
+            flex-grow: 1;
+
+            .form__div {
+                width: 95%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                label,
+                input,
+                select {
+                    width: 100%;
+                }
+            }
+
+            .form__divBtn {
+                width: 100%;
+            }
+
+            #extra {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 570px) {
+
+    // delivery
+    form {
+        .form__divComida {
+            grid-template-areas:
+                'comida inputCom'
+                'cantidad inputCant'
+            ;
+            gap: 0;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+
+            label {
+                text-align: center;
+            }
+        }
+    }
+
+    #pizzaSeleccionada,
+    #empanadaSeleccionada,
+    #carneSeleccionada,
+    #bebidaSeleccionada {
+        grid-area: inputCom;
+        width: 90%;
+    }
+
+    #cPLabel,
+    #cELabel,
+    #cCLabel,
+    #cBLabel {
+        grid-area: cantidad;
+        text-align: center;
+    }
+
+    /* entrenimiento 
+    esto capaz no lo pongo xq creo se ve mejor en 40rem pero esta en duda*/
+    // .carousel-item{
+    //     img{
+    //         height: 25rem;
+    //     }
+    // }
+}
+
+@media screen and (max-width : 480px) {
+
+    /* titulo */
+    .tituloContainer {
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        .logoDesaparece {
+            display: none;
+        }
+    }
+
+
+    // index
+    .menuContainer {
+        h2 {
+            font-size: 3rem;
+        }
+
+        section {
+            article {
+                h3{
+                    font-size: 2.5rem;
+                }
+                .recContainer {
+                    .rec {
+                        div {
+                            .imgRec {
+                                width: 100%;
+                            }
+                            p{
+                                font-size: 2.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .imgClubContainer{
+        p{
+            font-size: 2.5rem;
+        }
+    }
+
+    /* menu page*/
+    // .menuSection {
+    //     margin-bottom: 1rem;
+    // }
+
+    .listaMenu,
+    .listaMenuBebida {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* footer */
+    .footer{
+        p{
+            display: block;
+            font-size: 3rem;
+        }
+    }
+
+    /* historia */
+    .diarioFondo {
+        padding: 0rem;
+        padding-top: 1rem;
+    }
+
+    .divCarousel{
+        div{
+            img{
+                height: 30rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 453px) {
+    // delivery
+    form{
+        .form__divComida {
+            margin: 0;
+            grid-template-areas:
+                'comida .'
+                'inputCom inputCom'
+                'cantidad inputCant'
+            ;
+            gap: 0;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+            padding: 2rem;
+
+            label{
+                text-align: start;
+            }
+        }
+    }
+
+    #pizzaSeleccionada,
+    #empanadaSeleccionada,
+    #carneSeleccionada,
+    #bebidaSeleccionada {
+        grid-area: inputCom;
+        width: 100%;
+    }
+
+    #cPLabel,
+    #cELabel,
+    #cCLabel,
+    #cBLabel {
+        grid-area: cantidad;
+        text-align: start;
+    }
+
+    /* entrenimiento */
+    .carousel-item{
+        img{
+            height: 30rem;
+        }
+    }
+
+    /* footer img redes en columna*/
+    .footer {
+        height: fit-content;
+
+        ul {
+            flex-direction: column;
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a {
+                    img {
+                        flex-grow: 1;
+                        width: 6rem;
+                        height: 6rem;
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width : 320px) {
+
+    // titulo
+    .tituloContainer {
+        h1{
+            font-size: 3rem;
+        }
+    }
+    
+    /* index */
+    .recContainer{
+        width: 100%;
+    }
+
+    .recomendadoMenu{
+        article{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .imgClubContainer{
+        img{
+            width: 25rem;
+            height: 25rem;
+        }
+    }
+
+    /* delivery */
+    #extra {
+        text-align: center;
+    }
+}

@@ -1,0 +1,19 @@
+@import './assets/mixings';
+
+/* HISTORIA */
+.diarioFondo {
+    background-image: url("https://fondosmil.com/fondo/88721.jpg");
+    padding: 2rem;
+}
+
+.hisText {
+    display: flex;
+    background-color: #f7a3437c;
+    padding: 1rem;
+    @include fontSizeYWeight(3rem);
+    // .primeraLetra
+    div{
+        color: #f00;
+    }
+}
+

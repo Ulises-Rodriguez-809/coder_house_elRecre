@@ -1,0 +1,45 @@
+@import 'mixings';
+
+/* HEADER */
+/* NAVBAR */
+.header {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    nav {
+        margin: 0;
+        padding: 0;
+        background-color: $bgNavFormEntFooter;
+        width: 100%;
+
+        //la otra es ponerlo dentro del nav pero con el nombre de la clase
+        .divContainerNavBar {
+            padding: 0;
+        }
+    }
+}
+
+// si pones div dentro de nav el problema es q te afecta tambien a el div dentro del .divContainerNavBar
+// .divContainerNavBar {
+//     padding: 0;
+// }
+
+.navBar {
+    ul {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: nowrap;
+        text-align: center;
+
+        li {
+            list-style: none;
+            flex-grow: 1;
+            font-size: 2rem;
+            padding: 1rem;
+            @include border(solid, .1rem, #000);
+        }
+    }
+
+}

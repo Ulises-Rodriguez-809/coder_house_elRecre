@@ -1,0 +1,47 @@
+@mixin marginYPadding($marg, $padd) {
+    margin: $marg;
+    padding: $padd;
+}
+
+@mixin widthYHeight($widt, $heig) {
+    width: $widt;
+    height: $heig;
+}
+
+//esto igual lo dejo como valor por defecto en la funcion 
+$fontWeight : 800;
+
+@mixin fontSizeYWeight($font) {
+    font-size: $font;
+    font-weight: $fontWeight;
+}
+
+@mixin border($lineStyle, $size, $color) {
+    border: $lineStyle $size $color;
+}
+
+@mixin displayFlexYProps($flexDirc, $justi, $alItem) {
+    display: flex;
+    flex-direction: $flexDirc;
+    justify-content: $justi;
+    align-items: $alItem;
+}
+
+
+
+$bgNavFormEntFooter : #f66666;
+$bgIndexMenu : rgb(94, 96, 96);
+$bgFondoMenuForm : #767575;
+
+// delivery y reserva
+$bgInputs : #f8f870;
+$bgReset : rgb(248, 5, 5);
+$bgSubmit : rgb(43, 177, 43);
+$colorLertras : #fff;
+
+.inputsProps {
+    color: $colorLertras;
+    font-size: 2.5rem;
+    background-color: $bgNavFormEntFooter;
+    border: none;
+}

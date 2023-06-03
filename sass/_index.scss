@@ -1,0 +1,80 @@
+@import './assets/mixings';
+
+/*INDEX */
+// menu recomendado contenedor
+.menuContainer {
+    background-color: $bgIndexMenu;
+    @include marginYPadding(2rem, 2rem);
+    @include border(dashed, .4rem, #000);
+    border-radius: 5%;
+
+    // titulo menu recomendado 
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        color: #f8f870;
+    }
+
+    //secciones del menu  .recomendadoMenu
+    section {
+        background-color: $bgFondoMenuForm;
+        @include marginYPadding(1rem, 2rem);
+        font-size: 3rem;
+        // text-align: center;
+
+        article {
+
+            //comida y bebida recomendado 
+            h3 {
+                text-align: left;
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+//contenedor del img y precio 
+// .recContainer iria dentro del article pero como ya se anida mucho asi q mejor dejo la clase
+.recContainer {
+    @include displayFlexYProps(row, space-around, center);
+
+    .rec {
+        text-align: center;
+        margin-top: 2rem;
+
+        div {
+            img {
+                @include widthYHeight(40rem, 20rem);
+            }
+
+            p {
+                @include fontSizeYWeight(3rem);
+            }
+        }
+    }
+}
+
+/* UBICACION */
+#ubicacionContainer {
+    margin-top: 15rem;
+}
+
+.imgClubContainer {
+    text-align: center;
+    margin-bottom: 10rem;
+    @include fontSizeYWeight(4rem);
+
+    img{
+        @include border(solid, .2rem, #000);
+        border-radius: 50%;
+        @include widthYHeight(30rem, 30rem);
+    }
+}
+
+.maps {
+    overflow: hidden;
+
+    iframe{
+        width: 100%;
+    }
+}

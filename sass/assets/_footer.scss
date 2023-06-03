@@ -1,0 +1,40 @@
+@import 'mixings';
+
+/* FOOTER */
+.footer {
+    margin-top: 10rem;
+    @include border(solid,.2rem,#000);
+    overflow: hidden;
+    background-image: url("../img/fondo2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+    text-align: center;
+
+    p{
+        display: inline-block;
+        @include fontSizeYWeight(4rem);
+        background-color: $bgNavFormEntFooter;
+    }
+
+    ul{
+        @include displayFlexYProps(row, center, center);
+        background-color: $bgNavFormEntFooter;
+        margin-top: 4rem;
+
+        li{
+            list-style: none;
+
+            //link de las redes del recre
+            a{
+                //img de face,insta,tw
+                img{
+                    padding: .5rem;
+                    @include widthYHeight(5rem, 5rem);
+                    margin-left: 3rem;
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+}
