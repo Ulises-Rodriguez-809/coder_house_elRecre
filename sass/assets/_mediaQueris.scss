@@ -472,8 +472,14 @@
     }
     
     /* index */
-    .recContainer{
-        width: 100%;
+    .menuContainer{
+        section{
+            article{
+                .recContainer{
+                    width: 100%;
+                }
+            }
+        }
     }
 
     .recomendadoMenu{
