@@ -36,9 +36,12 @@
 
     /* titulo en las pages */
     .tituloContainer {
-        h1 {
+        .titulo{
             border: none;
         }
+        // h1 {
+        //     border: none;
+        // }
     }
 
     /* index y menu page */
@@ -53,7 +56,7 @@
         padding: 0 1rem;
 
         // .menuSection
-        section {
+        .menuSection {
             @include marginYPadding(0, 0);
 
             article {
@@ -99,15 +102,18 @@
 
     /* index */
     .tituloContainer {
-        h1 {
+        .titulo{
             font-size: 4rem;
         }
+        // h1 {
+        //     font-size: 4rem;
+        // }
     }
 
     .menuContainer {
 
         // .recomendadoMenu
-        section {
+        .recomendadoMenu {
             margin: 0 0 1rem 0;
             padding: 0;
 
@@ -158,7 +164,7 @@
         @include marginYPadding(0,0);
         border-radius: 0%;
 
-        section {
+        .recomendadoMenu {
             article {
                 .recContainer {
                     .rec {
@@ -177,7 +183,7 @@
     .menu {
         padding: 0;
 
-        section {
+        .menuSection {
             article {
 
                 .listaMenu,
@@ -291,21 +297,13 @@
         grid-area: cantidad;
         text-align: center;
     }
-
-    /* entrenimiento 
-    esto capaz no lo pongo xq creo se ve mejor en 40rem pero esta en duda*/
-    // .carousel-item{
-    //     img{
-    //         height: 25rem;
-    //     }
-    // }
 }
 
 @media screen and (max-width : 480px) {
 
     /* titulo */
     .tituloContainer {
-        h1 {
+        .titulo{
             font-size: 3.5rem;
         }
 
@@ -317,11 +315,11 @@
 
     // index
     .menuContainer {
-        h2 {
+        .tituloRecomendado{
             font-size: 3rem;
         }
 
-        section {
+        .recomendadoMenu {
             article {
                 h3{
                     font-size: 2.5rem;
@@ -433,7 +431,7 @@
 
             li {
                 a {
-                    img {
+                    .redes {
                         flex-grow: 1;
                         @include widthYHeight(6rem,6rem);
                         margin-top: 1.5rem;
@@ -449,9 +447,12 @@
 
     // titulo
     .tituloContainer {
-        h1{
+        .titulo{
             font-size: 3rem;
         }
+        // h1{
+        //     font-size: 3rem;
+        // }
     }
     
     /* index */

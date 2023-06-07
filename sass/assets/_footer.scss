@@ -28,7 +28,7 @@
             //link de las redes del recre
             a{
                 //img de face,insta,tw
-                img{
+                .redes{
                     padding: .5rem;
                     @include widthYHeight(5rem, 5rem);
                     margin-left: 3rem;

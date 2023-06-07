@@ -83,7 +83,7 @@ html {
 .footer ul li {
   list-style: none;
 }
-.footer ul li a img {
+.footer ul li a .redes {
   padding: 0.5rem;
   width: 5rem;
   height: 5rem;
@@ -108,12 +108,12 @@ html {
   margin-bottom: 5rem;
   margin-top: 2rem;
 }
-.tituloContainer div img {
+.tituloContainer div .logo {
   margin-top: 2rem;
   width: 8rem;
   height: 8rem;
 }
-.tituloContainer h1 {
+.tituloContainer .titulo {
   border-bottom: solid 0.2rem #000;
   font-size: 5rem;
   font-weight: 800;
@@ -135,7 +135,7 @@ html {
   margin-top: 2rem;
   display: inline-block;
 }
-.subirContainer a img {
+.subirContainer a .redes {
   padding: 0.5rem;
   width: 4rem;
   height: 5rem;
@@ -158,18 +158,18 @@ html {
   border: dashed 0.4rem #000;
   border-radius: 5%;
 }
-.menuContainer h2 {
+.menuContainer .tituloRecomendado {
   text-align: center;
   font-size: 4rem;
   color: #f8f870;
 }
-.menuContainer section {
+.menuContainer .recomendadoMenu {
   background-color: #767575;
   margin: 1rem;
   padding: 2rem;
   font-size: 3rem;
 }
-.menuContainer section article h3 {
+.menuContainer .recomendadoMenu article h3 {
   text-align: left;
   font-size: 4rem;
 }
@@ -184,7 +184,7 @@ html {
   text-align: center;
   margin-top: 2rem;
 }
-.recContainer .rec div img {
+.recContainer .rec div .imgRec {
   width: 40rem;
   height: 20rem;
 }
@@ -204,7 +204,7 @@ html {
   font-size: 4rem;
   font-weight: 800;
 }
-.imgClubContainer img {
+.imgClubContainer .imgClub {
   border: solid 0.2rem #000;
   border-radius: 50%;
   width: 30rem;
@@ -618,7 +618,7 @@ form .form__divComida {
     border-top: solid #000 0.1rem;
   }
   /* titulo en las pages */
-  .tituloContainer h1 {
+  .tituloContainer .titulo {
     border: none;
   }
   /* index y menu page */
@@ -630,18 +630,18 @@ form .form__divComida {
   .menu {
     padding: 0 1rem;
   }
-  .menu section {
+  .menu .menuSection {
     margin: 0;
     padding: 0;
   }
-  .menu section article .especialidad {
+  .menu .menuSection article .especialidad {
     padding: 0;
   }
-  .menu section article .especialidad img {
+  .menu .menuSection article .especialidad img {
     width: 25rem;
     height: 25rem;
   }
-  .menu section article .listaMenu {
+  .menu .menuSection article .listaMenu {
     gap: 0;
     padding: 0;
   }
@@ -661,30 +661,30 @@ form .form__divComida {
 }
 @media screen and (max-width: 850px) {
   /* index */
-  .tituloContainer h1 {
+  .tituloContainer .titulo {
     font-size: 4rem;
   }
-  .menuContainer section {
+  .menuContainer .recomendadoMenu {
     margin: 0 0 1rem 0;
     padding: 0;
   }
-  .menuContainer section article h3 {
+  .menuContainer .recomendadoMenu article h3 {
     text-align: left;
     font-size: 3rem;
     margin-left: 1rem;
   }
-  .menuContainer section article .recContainer {
+  .menuContainer .recomendadoMenu article .recContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  .menuContainer section article .recContainer .rec {
+  .menuContainer .recomendadoMenu article .recContainer .rec {
     width: 100%;
     height: fit-content;
   }
-  .menuContainer section article .recContainer .rec div .imgRec {
+  .menuContainer .recomendadoMenu article .recContainer .rec div .imgRec {
     width: 60%;
     height: 60%;
   }
@@ -705,7 +705,7 @@ form .form__divComida {
     padding: 0;
     border-radius: 0%;
   }
-  .menuContainer section article .recContainer .rec div .imgRec {
+  .menuContainer .recomendadoMenu article .recContainer .rec div .imgRec {
     width: 70%;
     height: 60%;
   }
@@ -713,8 +713,8 @@ form .form__divComida {
   .menu {
     padding: 0;
   }
-  .menu section article .listaMenu,
-  .menu section article .listaMenuBebida {
+  .menu .menuSection article .listaMenu,
+  .menu .menuSection article .listaMenuBebida {
     margin: 0;
     grid-template-areas: none;
     grid-template-columns: repeat(2, 1fr);
@@ -803,27 +803,25 @@ form .form__divComida {
     grid-area: cantidad;
     text-align: center;
   }
-  /* entrenimiento 
-  esto capaz no lo pongo xq creo se ve mejor en 40rem pero esta en duda*/
 }
 @media screen and (max-width: 480px) {
   /* titulo */
-  .tituloContainer h1 {
+  .tituloContainer .titulo {
     font-size: 3.5rem;
   }
   .tituloContainer .logoDesaparece {
     display: none;
   }
-  .menuContainer h2 {
+  .menuContainer .tituloRecomendado {
     font-size: 3rem;
   }
-  .menuContainer section article h3 {
+  .menuContainer .recomendadoMenu article h3 {
     font-size: 2.5rem;
   }
-  .menuContainer section article .recContainer .rec div .imgRec {
+  .menuContainer .recomendadoMenu article .recContainer .rec div .imgRec {
     width: 100%;
   }
-  .menuContainer section article .recContainer .rec div p {
+  .menuContainer .recomendadoMenu article .recContainer .rec div p {
     font-size: 2.5rem;
   }
   .imgClubContainer p {
@@ -890,7 +888,7 @@ form .form__divComida {
     margin: 0;
     padding: 0;
   }
-  .footer ul li a img {
+  .footer ul li a .redes {
     flex-grow: 1;
     width: 6rem;
     height: 6rem;
@@ -898,7 +896,7 @@ form .form__divComida {
   }
 }
 @media screen and (max-width: 320px) {
-  .tituloContainer h1 {
+  .tituloContainer .titulo {
     font-size: 3rem;
   }
   /* index */

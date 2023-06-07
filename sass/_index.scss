@@ -9,14 +9,14 @@
     border-radius: 5%;
 
     // titulo menu recomendado 
-    h2 {
+    .tituloRecomendado{
         text-align: center;
         font-size: 4rem;
         color: #f8f870;
     }
 
     //secciones del menu  .recomendadoMenu
-    section {
+    .recomendadoMenu {
         background-color: $bgFondoMenuForm;
         @include marginYPadding(1rem, 2rem);
         font-size: 3rem;
@@ -43,7 +43,7 @@
         margin-top: 2rem;
 
         div {
-            img {
+            .imgRec {
                 @include widthYHeight(40rem, 20rem);
             }
 
@@ -64,7 +64,7 @@
     margin-bottom: 10rem;
     @include fontSizeYWeight(4rem);
 
-    img{
+    .imgClub{
         @include border(solid, .2rem, #000);
         border-radius: 50%;
         @include widthYHeight(30rem, 30rem);

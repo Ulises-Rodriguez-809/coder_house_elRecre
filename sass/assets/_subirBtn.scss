@@ -10,7 +10,7 @@
     display: inline-block;
 
     a{
-        img{
+        .redes{
             padding: .5rem;
             @include widthYHeight(4rem, 5rem);
             margin-left: 3rem;

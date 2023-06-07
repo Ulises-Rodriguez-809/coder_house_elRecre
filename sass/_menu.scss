@@ -4,23 +4,21 @@
 .menu {
     margin-top: 2rem;
 
-    //.menuSection
-    section{
+    section {
         background-color: $bgFondoMenuForm;
         @include marginYPadding(2rem, 1rem);
 
-        h3{
+        h3 {
             @include fontSizeYWeight(3rem);
             padding-left: 1rem
-            // margin-bottom: 3rem;
         }
-        
-        img{
+
+        img {
             @include widthYHeight(20rem, 20rem);
             border-radius: 50%;
         }
 
-        li{
+        li {
             @include displayFlexYProps(column, center, center);
             list-style: none;
             @include fontSizeYWeight(2.5rem);
@@ -31,8 +29,8 @@
 .especialidad {
     @include displayFlexYProps(column, center, center);
 
-    li{
-        img{
+    li {
+        img {
             @include widthYHeight(30rem, 30rem);
         }
     }
