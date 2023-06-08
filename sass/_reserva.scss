@@ -25,7 +25,7 @@
         }
     }
 
-    form {
+    .form {
         background-color: $bgNavFormEntFooter;
         display: flex;
         flex-direction: column;
@@ -51,18 +51,21 @@
                 @extend .inputsProps;
             }
 
+
             input,
             select,
             textarea {
                 margin: 2rem 0;
                 border-bottom: solid .2rem #fff;
 
-                &:hover {
-                    background-color: $bgInputs;
-                    color: #000;
-                    outline: none;
-                }
+                // esto no estoy seguro si ponerlo o no, no estoy convencido del todo
+                // &:hover {
+                //     background-color: $bgInputs;
+                //     color: #000;
+                //     outline: none;
+                // }
 
+                //tal ves el color no es el mejor pero mi idea es hacer una distincion como para indicar bien estas escribiendo aca
                 &:focus {
                     background-color: $bgInputs;
                     color: #000;

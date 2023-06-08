@@ -334,10 +334,10 @@ html {
   grid-template-rows: auto;
 }
 
-.inputsProps, .sectionForm form .form__divBtn input, .sectionForm form .form__div label,
-.sectionForm form .form__div input,
-.sectionForm form .form__div textarea,
-.sectionForm form .form__div select {
+.inputsProps, .sectionForm .form .form__divBtn input, .sectionForm .form .form__div label,
+.sectionForm .form .form__div input,
+.sectionForm .form .form__div textarea,
+.sectionForm .form .form__div select {
   color: #fff;
   font-size: 2.5rem;
   background-color: #f66666;
@@ -365,7 +365,7 @@ html {
   height: 25rem;
   border-radius: 50%;
 }
-.sectionForm form {
+.sectionForm .form {
   background-color: #f66666;
   display: flex;
   flex-direction: column;
@@ -374,49 +374,42 @@ html {
   width: fit-content;
   /* botones */
 }
-.sectionForm form .form__div {
+.sectionForm .form .form__div {
   width: 55rem;
   display: flex;
   flex-direction: column;
   margin: 1rem;
   /* datos, dia y select */
 }
-.sectionForm form .form__div input,
-.sectionForm form .form__div select,
-.sectionForm form .form__div textarea {
+.sectionForm .form .form__div input,
+.sectionForm .form .form__div select,
+.sectionForm .form .form__div textarea {
   margin: 2rem 0;
   border-bottom: solid 0.2rem #fff;
 }
-.sectionForm form .form__div input:hover,
-.sectionForm form .form__div select:hover,
-.sectionForm form .form__div textarea:hover {
+.sectionForm .form .form__div input:focus,
+.sectionForm .form .form__div select:focus,
+.sectionForm .form .form__div textarea:focus {
   background-color: #f8f870;
   color: #000;
   outline: none;
 }
-.sectionForm form .form__div input:focus,
-.sectionForm form .form__div select:focus,
-.sectionForm form .form__div textarea:focus {
-  background-color: #f8f870;
-  color: #000;
-  outline: none;
-}
-.sectionForm form .form__div textarea {
+.sectionForm .form .form__div textarea {
   border: solid 0.2rem #b8b4b4;
   padding: 0.2rem;
 }
-.sectionForm form .form__div input::placeholder,
-.sectionForm form .form__div textarea::placeholder {
+.sectionForm .form .form__div input::placeholder,
+.sectionForm .form .form__div textarea::placeholder {
   color: #fff;
   opacity: 0.8;
 }
-.sectionForm form .form__divBtn {
+.sectionForm .form .form__divBtn {
   display: flex;
   width: 100%;
   /* .form__divBtn--reset,
   .form__divBtn--submit, */
 }
-.sectionForm form .form__divBtn input {
+.sectionForm .form .form__divBtn input {
   flex-grow: 1;
   font-size: 2.5rem;
   font-weight: 800;
@@ -425,27 +418,30 @@ html {
   border-radius: 50px;
   width: 100%;
 }
-.sectionForm form .form__divBtn .form__divBtn--reset:hover {
+.sectionForm .form .form__divBtn .form__divBtn--reset:hover {
   background-color: rgb(248, 5, 5);
   color: #fff;
   cursor: pointer;
 }
-.sectionForm form .form__divBtn .form__divBtn--reset:focus {
+.sectionForm .form .form__divBtn .form__divBtn--reset:focus {
   background-color: rgb(248, 5, 5);
   color: #fff;
 }
-.sectionForm form .form__divBtn .form__divBtn--submit:hover {
+.sectionForm .form .form__divBtn .form__divBtn--submit:hover {
   background-color: rgb(43, 177, 43);
   color: #fff;
   cursor: pointer;
 }
-.sectionForm form .form__divBtn .form__divBtn--submit:focus {
+.sectionForm .form .form__divBtn .form__divBtn--submit:focus {
   background-color: rgb(43, 177, 43);
   color: #fff;
 }
 
 /* extra */
-.inputsProps, form label, form input, form textarea, form select {
+.inputsProps, .form label,
+.form input,
+.form textarea,
+.form select {
   color: #fff;
   font-size: 2.5rem;
   background-color: #f66666;
@@ -453,20 +449,26 @@ html {
 }
 
 /* DELIVIRY PAGE*/
-form input, form select, form textarea {
+.form input,
+.form select,
+.form textarea {
   margin: 2rem 0;
   border-bottom: solid 0.2rem #fff;
 }
-form input:focus, form select:focus, form textarea:focus {
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
   background-color: #f8f870;
   color: #000;
   outline: none;
 }
-form input::placeholder, form select::placeholder, form textarea::placeholder {
+.form input::placeholder,
+.form select::placeholder,
+.form textarea::placeholder {
   color: #fff;
   opacity: 0.8;
 }
-form .form__divComida {
+.form .form__divComida {
   display: grid;
   grid-template-areas: "comida inputCom cantidad inputCant";
   gap: 3rem;
@@ -587,7 +589,7 @@ form .form__divComida {
   font-size: 3rem;
   font-weight: 800;
 }
-.hisText div {
+.hisText .primeraLetra {
   color: #f00;
 }
 
@@ -757,36 +759,33 @@ form .form__divComida {
     background-color: #f66666;
     padding: 0;
   }
-  .sectionForm form {
+  .sectionForm .form {
     border: none;
     flex-grow: 1;
   }
-  .sectionForm form .form__div {
+  .sectionForm .form .form__div {
     width: 95%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .sectionForm form .form__div label,
-  .sectionForm form .form__div input,
-  .sectionForm form .form__div select {
+  .sectionForm .form .form__div label,
+  .sectionForm .form .form__div input,
+  .sectionForm .form .form__div select {
     width: 100%;
   }
-  .sectionForm form .form__divBtn {
-    width: 100%;
-  }
-  .sectionForm form #extra {
+  .sectionForm .form #extra {
     width: 100%;
   }
 }
 @media screen and (max-width: 570px) {
-  form .form__divComida {
+  .form .form__divComida {
     grid-template-areas: "comida inputCom" "cantidad inputCant";
     gap: 0;
     grid-template-columns: 1fr 2fr;
     align-items: center;
   }
-  form .form__divComida label {
+  .form .form__divComida label {
     text-align: center;
   }
   #pizzaSeleccionada,
@@ -849,7 +848,7 @@ form .form__divComida {
   }
 }
 @media screen and (max-width: 453px) {
-  form .form__divComida {
+  .form .form__divComida {
     margin: 0;
     grid-template-areas: "comida ." "inputCom inputCom" "cantidad inputCant";
     gap: 0;
@@ -857,7 +856,7 @@ form .form__divComida {
     align-items: center;
     padding: 2rem;
   }
-  form .form__divComida label {
+  .form .form__divComida label {
     text-align: start;
   }
   #pizzaSeleccionada,

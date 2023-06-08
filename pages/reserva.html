@@ -93,16 +93,16 @@
             <form class="form">
                 <!-- datos -->
                 <div class="form__div">
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre" id="form__div__labelDatos--nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-                    <label for="celular">Celular:</label>
+                    <label for="celular" id="form__div__labelDatos--celular">Celular:</label>
                     <input type="tel" name="celular" id="celular" placeholder="Ingrese su numero de celular" required>
-                    <label for="cantidad">Numero de Personas:</label>
+                    <label for="cantidad" id="form__div__labelDatos--numPersonas">Numero de Personas:</label>
                     <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad de personas" required>
                 </div>
                 <!-- comida o entretenimiento -->
                 <div class="form__div">
-                    <label for="cEReserva">Comida o Entrenimiento</label>
+                    <label for="cEReserva" id="form__div__labelCE">Comida o Entrenimiento</label>
                     <select name="cEReserva" id="cEReserva" required>
                         <option value="--eliga una opcion--">--eliga una opcion--</option>
                         <option value="comer">Comer</option>
@@ -114,13 +114,13 @@
                 </div>
                 <!-- dia -->
                 <div class="form__div">
-                    <label for="dia">Dia para la reserva</label>
+                    <label for="dia" id="form__div__label--dia">Dia para la reserva</label>
                     <input type="date" name="dia" id="dia" required>
-                    <label for="horario">Hora</label>
+                    <label for="horario" id="form__div__label--hora">Hora</label>
                     <input type="time" name="horario" id="horario" required>
                 </div>
                 <div class="form__div">
-                    <label for="extra">Notas</label>
+                    <label for="extra" id="form__div__labelExtra">Notas</label>
                     <textarea name="extra" id="extra" cols="30" rows="5"
                         placeholder="Hola! dejanos aca abajo tus anotacion (alergia, celiaquia, vegetarianismo, himpertencion, etc)"></textarea>
                 </div>

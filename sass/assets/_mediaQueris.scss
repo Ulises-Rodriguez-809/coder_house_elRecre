@@ -39,9 +39,6 @@
         .titulo{
             border: none;
         }
-        // h1 {
-        //     border: none;
-        // }
     }
 
     /* index y menu page */
@@ -235,7 +232,7 @@
         background-color: #f66666;
         padding: 0;
 
-        form {
+        .form {
             border: none;
             flex-grow: 1;
 
@@ -252,10 +249,6 @@
                 }
             }
 
-            .form__divBtn {
-                width: 100%;
-            }
-
             #extra {
                 width: 100%;
             }
@@ -266,7 +259,7 @@
 @media screen and (max-width : 570px) {
 
     // delivery
-    form {
+    .form {
         .form__divComida {
             grid-template-areas:
                 'comida inputCom'
@@ -377,7 +370,7 @@
 
 @media screen and (max-width : 453px) {
     // delivery
-    form{
+    .form{
         .form__divComida {
             margin: 0;
             grid-template-areas:

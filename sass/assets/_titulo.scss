@@ -1,6 +1,6 @@
 @import 'mixings';
 
-/* TITULO */ 
+/* TITULO */
 .tituloContainer {
     @include displayFlexYProps(row, center, flex-end);
     text-align: center;
@@ -12,19 +12,10 @@
             margin-top: 2rem;
             @include widthYHeight(8rem, 8rem);
         }
-
-        // img{
-        //     margin-top: 2rem;
-        //     @include widthYHeight(8rem, 8rem);
-        // }
     }
 
-    .titulo{
+    .titulo {
         border-bottom: solid .2rem #000;
         @include fontSizeYWeight(5rem);
     }
-    // h1 {
-    //     border-bottom: solid .2rem #000;
-    //     @include fontSizeYWeight(5rem);
-    // }
 }
