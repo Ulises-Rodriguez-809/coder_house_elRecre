@@ -802,6 +802,12 @@ html {
     grid-area: cantidad;
     text-align: center;
   }
+  .columnReverse570px {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 480px) {
   /* titulo */

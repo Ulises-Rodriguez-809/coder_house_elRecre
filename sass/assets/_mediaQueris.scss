@@ -102,9 +102,6 @@
         .titulo{
             font-size: 4rem;
         }
-        // h1 {
-        //     font-size: 4rem;
-        // }
     }
 
     .menuContainer {
@@ -224,7 +221,6 @@
         grid-column: auto;
         grid-row: auto;
         text-align: center;
-        justify-content: normal;
     }
 
     /* reserva  y delivery*/
@@ -289,6 +285,11 @@
     #cBLabel {
         grid-area: cantidad;
         text-align: center;
+    }
+
+    //historia
+    .columnReverse570px{
+        @include displayFlexYProps(column-reverse, center, center);
     }
 }
 
@@ -443,9 +444,6 @@
         .titulo{
             font-size: 3rem;
         }
-        // h1{
-        //     font-size: 3rem;
-        // }
     }
     
     /* index */
