@@ -9,7 +9,7 @@
     border-radius: 5%;
 
     // titulo menu recomendado 
-    .tituloRecomendado{
+    .tituloRecomendado {
         text-align: center;
         font-size: 4rem;
         color: #f8f870;
@@ -64,7 +64,7 @@
     margin-bottom: 10rem;
     @include fontSizeYWeight(4rem);
 
-    .imgClub{
+    .imgClub {
         @include border(solid, .2rem, #000);
         border-radius: 50%;
         @include widthYHeight(30rem, 30rem);
@@ -74,7 +74,7 @@
 .maps {
     overflow: hidden;
 
-    iframe{
+    iframe {
         width: 100%;
     }
 }
