@@ -35,7 +35,7 @@
         ;
         gap: 3rem;
         grid-template-columns: repeat(4, 1fr);
-        align-items: center;
+        
     }
 }
 
@@ -44,6 +44,9 @@
 #form_divComida__labelCarne,
 #form_divComida__labelBebida {
     grid-area: comida;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 #pizzaSeleccionada,
@@ -59,7 +62,9 @@
 #cCLabel,
 #cBLabel {
     grid-area: cantidad;
-    text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 #cP,

@@ -245,6 +245,10 @@
                 }
             }
 
+            .form__divComida{
+                margin: 1rem;
+            }
+
             #extra {
                 width: 100%;
             }
@@ -263,20 +267,17 @@
             ;
             gap: 0;
             grid-template-columns: 1fr 2fr;
-            align-items: center;
-
-            label {
-                text-align: center;
-            }
         }
     }
 
-    #pizzaSeleccionada,
-    #empanadaSeleccionada,
-    #carneSeleccionada,
-    #bebidaSeleccionada {
-        grid-area: inputCom;
-        width: 90%;
+    #form_divComida__labelPizza,
+    #form_divComida__labelEmpanada,
+    #form_divComida__labelCarne,
+    #form_divComida__labelBebida {
+        grid-area: comida;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     #cPLabel,
@@ -284,7 +285,16 @@
     #cCLabel,
     #cBLabel {
         grid-area: cantidad;
-        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #pizzaSeleccionada,
+    #empanadaSeleccionada,
+    #carneSeleccionada,
+    #bebidaSeleccionada {
+        grid-area: inputCom;
+        width: 100%;
     }
 
     //historia
@@ -379,14 +389,7 @@
                 'inputCom inputCom'
                 'cantidad inputCant'
             ;
-            gap: 0;
-            grid-template-columns: 1fr 2fr;
-            align-items: center;
-            padding: 2rem;
-
-            label{
-                text-align: start;
-            }
+            grid-template-columns: repeat(2,1fr);
         }
     }
 
@@ -395,7 +398,14 @@
     #carneSeleccionada,
     #bebidaSeleccionada {
         grid-area: inputCom;
-        width: 100%;
+    }
+
+    #form_divComida__labelPizza,
+    #form_divComida__labelEmpanada,
+    #form_divComida__labelCarne,
+    #form_divComida__labelBebida {
+        grid-area: comida;
+        justify-content: space-between;
     }
 
     #cPLabel,
@@ -403,7 +413,7 @@
     #cCLabel,
     #cBLabel {
         grid-area: cantidad;
-        text-align: start;
+        justify-content: space-between;
     }
 
     /* entrenimiento */
@@ -458,10 +468,5 @@
         img{
             @include widthYHeight(25rem,25rem);
         }
-    }
-
-    /* delivery */
-    #extra {
-        text-align: center;
     }
 }

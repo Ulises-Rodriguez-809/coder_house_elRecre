@@ -44,10 +44,6 @@
             input,
             textarea,
             select {
-                // color: #fff;
-                // font-size: 2.5rem;
-                // background-color: #f66666;
-                // border: none;
                 @extend .inputsProps;
             }
 
@@ -76,6 +72,7 @@
             textarea {
                 @include border(solid, .2rem, #b8b4b4);
                 padding: .2rem;
+                text-align: center;
             }
 
             input,
@@ -95,10 +92,6 @@
             /* .form__divBtn--reset,
             .form__divBtn--submit, */
             input {
-                // color: #fff;
-                //     font-size: 2.5rem;
-                //     background-color: #f66666;
-                //     border: none;
                 @extend .inputsProps;
                 flex-grow: 1;
                 font-size: 2.5rem;

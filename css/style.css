@@ -397,6 +397,7 @@ html {
 .sectionForm .form .form__div textarea {
   border: solid 0.2rem #b8b4b4;
   padding: 0.2rem;
+  text-align: center;
 }
 .sectionForm .form .form__div input::placeholder,
 .sectionForm .form .form__div textarea::placeholder {
@@ -473,7 +474,6 @@ html {
   grid-template-areas: "comida inputCom cantidad inputCant";
   gap: 3rem;
   grid-template-columns: repeat(4, 1fr);
-  align-items: center;
 }
 
 #form_divComida__labelPizza,
@@ -481,6 +481,9 @@ html {
 #form_divComida__labelCarne,
 #form_divComida__labelBebida {
   grid-area: comida;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 #pizzaSeleccionada,
@@ -496,7 +499,9 @@ html {
 #cCLabel,
 #cBLabel {
   grid-area: cantidad;
-  text-align: right;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 #cP,
@@ -752,7 +757,6 @@ html {
     grid-column: auto;
     grid-row: auto;
     text-align: center;
-    justify-content: normal;
   }
   /* reserva  y delivery*/
   .sectionForm {
@@ -774,6 +778,9 @@ html {
   .sectionForm .form .form__div select {
     width: 100%;
   }
+  .sectionForm .form .form__divComida {
+    margin: 1rem;
+  }
   .sectionForm .form #extra {
     width: 100%;
   }
@@ -783,24 +790,30 @@ html {
     grid-template-areas: "comida inputCom" "cantidad inputCant";
     gap: 0;
     grid-template-columns: 1fr 2fr;
+  }
+  #form_divComida__labelPizza,
+  #form_divComida__labelEmpanada,
+  #form_divComida__labelCarne,
+  #form_divComida__labelBebida {
+    grid-area: comida;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-  }
-  .form .form__divComida label {
-    text-align: center;
-  }
-  #pizzaSeleccionada,
-  #empanadaSeleccionada,
-  #carneSeleccionada,
-  #bebidaSeleccionada {
-    grid-area: inputCom;
-    width: 90%;
   }
   #cPLabel,
   #cELabel,
   #cCLabel,
   #cBLabel {
     grid-area: cantidad;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #pizzaSeleccionada,
+  #empanadaSeleccionada,
+  #carneSeleccionada,
+  #bebidaSeleccionada {
+    grid-area: inputCom;
+    width: 100%;
   }
   .columnReverse570px {
     display: flex;
@@ -857,27 +870,27 @@ html {
   .form .form__divComida {
     margin: 0;
     grid-template-areas: "comida ." "inputCom inputCom" "cantidad inputCant";
-    gap: 0;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    padding: 2rem;
-  }
-  .form .form__divComida label {
-    text-align: start;
+    grid-template-columns: repeat(2, 1fr);
   }
   #pizzaSeleccionada,
   #empanadaSeleccionada,
   #carneSeleccionada,
   #bebidaSeleccionada {
     grid-area: inputCom;
-    width: 100%;
+  }
+  #form_divComida__labelPizza,
+  #form_divComida__labelEmpanada,
+  #form_divComida__labelCarne,
+  #form_divComida__labelBebida {
+    grid-area: comida;
+    justify-content: space-between;
   }
   #cPLabel,
   #cELabel,
   #cCLabel,
   #cBLabel {
     grid-area: cantidad;
-    text-align: start;
+    justify-content: space-between;
   }
   /* entrenimiento */
   .carousel-item img {
@@ -915,10 +928,6 @@ html {
   .imgClubContainer img {
     width: 25rem;
     height: 25rem;
-  }
-  /* delivery */
-  #extra {
-    text-align: center;
   }
 }
 
