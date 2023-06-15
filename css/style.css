@@ -65,9 +65,12 @@ html {
   background-position: center;
   height: 20rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer p {
-  display: inline-block;
   font-size: 4rem;
   font-weight: 800;
   background-color: #f66666;
@@ -78,15 +81,18 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #f66666;
-  margin-top: 4rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 7rem;
+  width: 100%;
 }
 .footer ul li {
   list-style: none;
 }
 .footer ul li a .redes {
   padding: 0.5rem;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -855,8 +861,8 @@ html {
   }
   /* footer */
   .footer p {
-    display: block;
-    font-size: 3rem;
+    width: 100%;
+    font-size: 4rem;
   }
   /* historia */
   .diarioFondo {
@@ -899,6 +905,9 @@ html {
   /* footer img redes en columna*/
   .footer {
     height: fit-content;
+  }
+  .footer p {
+    font-size: 3rem;
   }
   .footer ul {
     flex-direction: column;

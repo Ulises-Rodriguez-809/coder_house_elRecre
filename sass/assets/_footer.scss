@@ -2,6 +2,7 @@
 
 /* FOOTER */
 .footer {
+    @include displayFlexYProps(column,center,center);
     margin-top: 10rem;
     @include border(solid, .2rem, #000);
     overflow: hidden;
@@ -12,7 +13,6 @@
     text-align: center;
 
     p {
-        display: inline-block;
         @include fontSizeYWeight(4rem);
         background-color: $bgNavFormEntFooter;
     }
@@ -20,7 +20,10 @@
     ul {
         @include displayFlexYProps(row, center, center);
         background-color: $bgNavFormEntFooter;
-        margin-top: 4rem;
+        margin: 0;
+        padding: 0;
+        margin-top: 7rem;
+        width: 100%;
 
         li {
             list-style: none;
@@ -31,7 +34,7 @@
                 //img de face,insta,tw
                 .redes {
                     padding: .5rem;
-                    @include widthYHeight(5rem, 5rem);
+                    @include widthYHeight(6rem, 6rem);
                     margin-left: 3rem;
                     margin-right: 3rem;
                 }

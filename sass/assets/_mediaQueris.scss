@@ -362,8 +362,8 @@
     /* footer */
     .footer {
         p {
-            display: block;
-            font-size: 3rem;
+            width: 100%;
+            font-size: 4rem;
         }
     }
 
@@ -429,6 +429,10 @@
     /* footer img redes en columna*/
     .footer {
         height: fit-content;
+
+        p{
+            font-size: 3rem;
+        }
 
         ul {
             flex-direction: column;
