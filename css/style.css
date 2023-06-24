@@ -358,6 +358,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   height: 100%;
 }
 .sectionForm .publicidad ul li {
@@ -372,6 +373,7 @@ html {
   background-color: #f66666;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: solid 0.2rem #000;
   width: fit-content;
